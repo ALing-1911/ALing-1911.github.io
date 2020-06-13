@@ -302,7 +302,7 @@ Starting Nmap 7.80 ( http">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -428,6 +428,15 @@ Starting Nmap 7.80 ( http">
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/渗透测试/" class="post-category" target="_blank">
+                            渗透测试
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -518,12 +527,10 @@ Nmap done: 1 IP address (1 host up) scanned in 6.90 seconds<span aria-hidden="tr
 <p>  dirb 对 development 目录进行扫描</p>
 </blockquote>
 <pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ dirb http://192.168.232.152/development -u julius.b:wJWm4CgV26
-
 -----------------
 DIRB v2.22    
 By The Dark Raver
 -----------------
-
 START_TIME: Sat Jun  6 01:35:04 2020
 URL_BASE: http://192.168.232.152/development/
 WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
@@ -531,9 +538,9 @@ AUTHORIZATION: julius.b:wJWm4CgV26
 -----------------
 GENERATED WORDS: 4612                                                     
 ---- Scanning URL: http://192.168.232.152/development/ ----
-==> DIRECTORY: http://192.168.232.152/development/backups/                                  
-+ http://192.168.232.152/development/index.html (CODE:200|SIZE:21)                          
-+ http://192.168.232.152/development/php.ini (CODE:200|SIZE:109)                            
+==> DIRECTORY: http://192.168.232.152/development/backups/                               
++ http://192.168.232.152/development/index.html (CODE:200|SIZE:21)                       
++ http://192.168.232.152/development/php.ini (CODE:200|SIZE:109)                         
 ==> DIRECTORY: http://192.168.232.152/development/tools/                   
 ---- Entering directory: http://192.168.232.152/development/backups/ ----
 (!) WARNING: Directory IS LISTABLE. No need to scan it.                        
@@ -547,7 +554,7 @@ GENERATED WORDS: 4612
 -----------------
 END_TIME: Sat Jun  6 01:35:18 2020
 DOWNLOADED: 9224 - FOUND: 3
-kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>访问  <code>http://192.168.232.152/development/tools/</code></p>
 <p><img src="image-20200606133701657.png" alt></p>
 <p>看到一个文件上传，试了很久没成功，看大佬的做法，有一个文件包含结合phpinfo可以搞</p>
@@ -1077,7 +1084,7 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="【加密】hexothebox-ctf-web">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="【加密】hexothebox-ctf-web">
                         
                         <span class="card-title">【加密】hexothebox-ctf-web</span>
                     </div>
@@ -1126,7 +1133,7 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Typo">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Typo">
                         
                         <span class="card-title">Typo</span>
                     </div>
@@ -1134,7 +1141,7 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们半路迷路了，他拿出一堆仪器来，指东南西北针……我说你这都落后了，咱得采取先进的办法，扔鞋吧。	——郭德纲
+                            目录扫描、phpmyadmin弱口令、typo3拿shell、apache2-restart提权
                         
                     </div>
                     <div class="publish-info">
@@ -1312,7 +1319,7 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">9.1k</span>
+            <span class="white-color">10.2k</span>
             
 
             <br>

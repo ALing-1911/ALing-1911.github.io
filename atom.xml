@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aling-1911.github.io/"/>
-  <updated>2020-06-10T09:15:29.317Z</updated>
+  <updated>2020-06-13T06:36:03.887Z</updated>
   <id>https://aling-1911.github.io/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Geisha</title>
+    <link href="https://aling-1911.github.io/2020/06/13/geisha/"/>
+    <id>https://aling-1911.github.io/2020/06/13/geisha/</id>
+    <published>2020-06-13T05:23:57.000Z</published>
+    <updated>2020-06-13T06:36:03.887Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  nmap 扫描&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;kali@kali:~$ sudo nmap
+        
+      
+    
+    </summary>
+    
+      <category term="渗透测试" scheme="https://aling-1911.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="vulnhub" scheme="https://aling-1911.github.io/tags/vulnhub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell 语法</title>
+    <link href="https://aling-1911.github.io/2020/06/11/shell-yu-fa/"/>
+    <id>https://aling-1911.github.io/2020/06/11/shell-yu-fa/</id>
+    <published>2020-06-10T23:40:44.000Z</published>
+    <updated>2020-06-13T06:43:56.008Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  shell 特殊符号&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;符号&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;含义&lt;/th&gt;
+&lt;th
+        
+      
+    
+    </summary>
+    
+      <category term="编程语言" scheme="https://aling-1911.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="shell" scheme="https://aling-1911.github.io/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>【加密】hexothebox-ctf-web</title>
@@ -47,7 +110,7 @@
     <link href="https://aling-1911.github.io/2020/06/06/vulnhub-cryptobank/"/>
     <id>https://aling-1911.github.io/2020/06/06/vulnhub-cryptobank/</id>
     <published>2020-06-06T02:45:02.000Z</published>
-    <updated>2020-06-10T09:36:54.407Z</updated>
+    <updated>2020-06-13T06:50:02.849Z</updated>
     
     <summary type="html">
     
@@ -66,6 +129,8 @@
     
     </summary>
     
+      <category term="渗透测试" scheme="https://aling-1911.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
     
       <category term="vulnhub" scheme="https://aling-1911.github.io/tags/vulnhub/"/>
     
@@ -76,7 +141,7 @@
     <link href="https://aling-1911.github.io/2020/05/30/vulnhub-typo/"/>
     <id>https://aling-1911.github.io/2020/05/30/vulnhub-typo/</id>
     <published>2020-05-30T08:00:26.000Z</published>
-    <updated>2020-06-10T09:37:44.831Z</updated>
+    <updated>2020-06-13T06:57:33.850Z</updated>
     
     <summary type="html">
     
@@ -104,7 +169,7 @@ Starting
     <link href="https://aling-1911.github.io/2020/05/26/vulnhub-sumo/"/>
     <id>https://aling-1911.github.io/2020/05/26/vulnhub-sumo/</id>
     <published>2020-05-26T00:53:57.000Z</published>
-    <updated>2020-06-10T09:37:24.447Z</updated>
+    <updated>2020-06-13T06:52:23.261Z</updated>
     
     <summary type="html">
     
@@ -131,7 +196,7 @@ Starting Nmap 7.80 (
     <link href="https://aling-1911.github.io/2020/05/22/vulnhub-sunrise/"/>
     <id>https://aling-1911.github.io/2020/05/22/vulnhub-sunrise/</id>
     <published>2020-05-22T00:45:17.000Z</published>
-    <updated>2020-06-10T09:37:36.316Z</updated>
+    <updated>2020-06-13T06:55:02.984Z</updated>
     
     <summary type="html">
     
@@ -159,7 +224,7 @@ Starting Nmap 7.80 (
     <link href="https://aling-1911.github.io/2020/05/21/vulnhub-dc-1/"/>
     <id>https://aling-1911.github.io/2020/05/21/vulnhub-dc-1/</id>
     <published>2020-05-21T14:04:36.000Z</published>
-    <updated>2020-06-10T09:37:13.314Z</updated>
+    <updated>2020-06-13T06:51:38.241Z</updated>
     
     <summary type="html">
     
@@ -188,7 +253,7 @@ Starting Nmap 7.80 (
     <link href="https://aling-1911.github.io/2020/05/20/xin-xi-shou-ji/"/>
     <id>https://aling-1911.github.io/2020/05/20/xin-xi-shou-ji/</id>
     <published>2020-05-20T10:28:09.000Z</published>
-    <updated>2020-06-10T09:06:14.311Z</updated>
+    <updated>2020-06-13T06:59:56.184Z</updated>
     
     <summary type="html">
     
@@ -210,38 +275,11 @@ Starting Nmap 7.80 (
   </entry>
   
   <entry>
-    <title>wp-1</title>
-    <link href="https://aling-1911.github.io/2020/05/20/wp-1/"/>
-    <id>https://aling-1911.github.io/2020/05/20/wp-1/</id>
-    <published>2020-05-20T09:28:47.000Z</published>
-    <updated>2020-06-10T09:32:20.507Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;第一步确定dusk靶机ip&lt;/p&gt;
-&lt;p&gt;用nmap netdiscover之类的工具去扫，扫不到怎么办，看看这个吧  &lt;strong&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="渗透测试" scheme="https://aling-1911.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="vulnhub" scheme="https://aling-1911.github.io/tags/vulnhub/"/>
-    
-  </entry>
-  
-  <entry>
     <title>MrRobot</title>
     <link href="https://aling-1911.github.io/2020/05/19/vulnhub-mrrobot/"/>
     <id>https://aling-1911.github.io/2020/05/19/vulnhub-mrrobot/</id>
     <published>2020-05-19T14:24:24.000Z</published>
-    <updated>2020-06-10T09:18:03.754Z</updated>
+    <updated>2020-06-13T06:46:32.583Z</updated>
     
     <summary type="html">
     
@@ -266,7 +304,7 @@ Starting Nmap 7.80 (
     <link href="https://aling-1911.github.io/2020/05/19/docker-commands/"/>
     <id>https://aling-1911.github.io/2020/05/19/docker-commands/</id>
     <published>2020-05-19T10:56:06.000Z</published>
-    <updated>2020-06-10T09:07:18.687Z</updated>
+    <updated>2020-06-13T06:42:56.211Z</updated>
     
     <summary type="html">
     
@@ -288,6 +326,33 @@ Starting Nmap 7.80 (
     
     
       <category term="docker" scheme="https://aling-1911.github.io/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wp-1</title>
+    <link href="https://aling-1911.github.io/2020/04/20/wp-1/"/>
+    <id>https://aling-1911.github.io/2020/04/20/wp-1/</id>
+    <published>2020-04-20T09:28:47.000Z</published>
+    <updated>2020-06-13T06:59:13.884Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;第一步确定dusk靶机ip&lt;/p&gt;
+&lt;p&gt;用nmap netdiscover之类的工具去扫，扫不到怎么办，看看这个吧  &lt;strong&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="渗透测试" scheme="https://aling-1911.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="vulnhub" scheme="https://aling-1911.github.io/tags/vulnhub/"/>
     
   </entry>
   

