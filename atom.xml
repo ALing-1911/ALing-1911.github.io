@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aling-1911.github.io/"/>
-  <updated>2020-06-17T10:11:47.487Z</updated>
+  <updated>2020-06-21T04:42:42.799Z</updated>
   <id>https://aling-1911.github.io/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blunder</title>
+    <link href="https://aling-1911.github.io/2020/06/21/blunder/"/>
+    <id>https://aling-1911.github.io/2020/06/21/blunder/</id>
+    <published>2020-06-21T00:33:56.000Z</published>
+    <updated>2020-06-21T04:42:42.799Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  nmap&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;kali@kali:~$ nmap
+        
+      
+    
+    </summary>
+    
+      <category term="渗透测试" scheme="https://aling-1911.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="hackTheBox" scheme="https://aling-1911.github.io/tags/hackTheBox/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell 格式化输出</title>
+    <link href="https://aling-1911.github.io/2020/06/19/shell-ge-shi-hua-shu-chu/"/>
+    <id>https://aling-1911.github.io/2020/06/19/shell-ge-shi-hua-shu-chu/</id>
+    <published>2020-06-19T00:02:50.000Z</published>
+    <updated>2020-06-19T00:30:56.860Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  echo 一个神奇的东西&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;# 参数 
+# -n  
+        
+      
+    
+    </summary>
+    
+      <category term="编程语言" scheme="https://aling-1911.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="shell" scheme="https://aling-1911.github.io/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>Tre</title>
@@ -130,9 +189,9 @@
       <category term="渗透测试" scheme="https://aling-1911.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="CTF" scheme="https://aling-1911.github.io/tags/CTF/"/>
-    
       <category term="hackTheBox" scheme="https://aling-1911.github.io/tags/hackTheBox/"/>
+    
+      <category term="CTF" scheme="https://aling-1911.github.io/tags/CTF/"/>
     
   </entry>
   
