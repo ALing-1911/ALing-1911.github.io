@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aling-1911.github.io/"/>
-  <updated>2020-06-21T04:42:42.799Z</updated>
+  <updated>2020-06-27T02:38:40.737Z</updated>
   <id>https://aling-1911.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>blunder</title>
+    <title>Sauna</title>
+    <link href="https://aling-1911.github.io/2020/06/27/sauna/"/>
+    <id>https://aling-1911.github.io/2020/06/27/sauna/</id>
+    <published>2020-06-26T23:56:39.000Z</published>
+    <updated>2020-06-27T02:38:40.737Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  nmap 扫描&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;kali@kali:~$ sudo nmap
+        
+      
+    
+    </summary>
+    
+      <category term="渗透测试" scheme="https://aling-1911.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="hackthebox" scheme="https://aling-1911.github.io/tags/hackthebox/"/>
+    
+      <category term="windows" scheme="https://aling-1911.github.io/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Blunder</title>
     <link href="https://aling-1911.github.io/2020/06/21/blunder/"/>
     <id>https://aling-1911.github.io/2020/06/21/blunder/</id>
     <published>2020-06-21T00:33:56.000Z</published>
-    <updated>2020-06-21T04:42:42.799Z</updated>
+    <updated>2020-06-27T02:38:25.186Z</updated>
     
     <summary type="html">
     
@@ -172,7 +203,7 @@
     <link href="https://aling-1911.github.io/2020/06/09/hexothebox-ctf-web/"/>
     <id>https://aling-1911.github.io/2020/06/09/hexothebox-ctf-web/</id>
     <published>2020-06-09T05:59:47.000Z</published>
-    <updated>2020-06-18T15:23:25.964Z</updated>
+    <updated>2020-06-21T09:40:36.341Z</updated>
     
     <summary type="html">
     

