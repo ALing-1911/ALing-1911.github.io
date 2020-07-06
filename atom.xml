@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aling-1911.github.io/"/>
-  <updated>2020-06-27T02:38:40.737Z</updated>
+  <updated>2020-07-06T23:48:26.021Z</updated>
   <id>https://aling-1911.github.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python wad</title>
+    <link href="https://aling-1911.github.io/2020/07/07/python-wad/"/>
+    <id>https://aling-1911.github.io/2020/07/07/python-wad/</id>
+    <published>2020-07-06T23:44:12.000Z</published>
+    <updated>2020-07-06T23:48:26.021Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  安装wad&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;pip3 install wad&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="编程语言" scheme="https://aling-1911.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="python" scheme="https://aling-1911.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>redis 1</title>
+    <link href="https://aling-1911.github.io/2020/07/02/redis-1/"/>
+    <id>https://aling-1911.github.io/2020/07/02/redis-1/</id>
+    <published>2020-07-02T12:00:14.000Z</published>
+    <updated>2020-07-06T23:43:46.493Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;简单记录&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;#redis 默认端口 6379
+#配置文件 redis安装目录/redis.conf(windows
+        
+      
+    
+    </summary>
+    
+      <category term="漏洞学习" scheme="https://aling-1911.github.io/categories/%E6%BC%8F%E6%B4%9E%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="redis" scheme="https://aling-1911.github.io/tags/redis/"/>
+    
+  </entry>
   
   <entry>
     <title>Sauna</title>
@@ -425,7 +482,7 @@ Starting Nmap 7.80 (
     <link href="https://aling-1911.github.io/2020/05/19/docker-commands/"/>
     <id>https://aling-1911.github.io/2020/05/19/docker-commands/</id>
     <published>2020-05-19T10:56:06.000Z</published>
-    <updated>2020-06-13T06:42:56.211Z</updated>
+    <updated>2020-07-03T02:47:07.492Z</updated>
     
     <summary type="html">
     
@@ -455,7 +512,7 @@ Starting Nmap 7.80 (
     <link href="https://aling-1911.github.io/2020/04/20/wp-1/"/>
     <id>https://aling-1911.github.io/2020/04/20/wp-1/</id>
     <published>2020-04-20T09:28:47.000Z</published>
-    <updated>2020-06-15T10:20:26.224Z</updated>
+    <updated>2020-06-28T01:49:02.737Z</updated>
     
     <summary type="html">
     

@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aling-1911.github.io/2020/07/07/python-wad/</loc>
+    
+    <lastmod>2020-07-06T23:48:26.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://aling-1911.github.io/2020/07/02/redis-1/</loc>
+    
+    <lastmod>2020-07-06T23:43:46.493Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://aling-1911.github.io/2020/05/19/docker-commands/</loc>
+    
+    <lastmod>2020-07-03T02:47:07.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://aling-1911.github.io/2020/04/20/wp-1/</loc>
+    
+    <lastmod>2020-06-28T01:49:02.737Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://aling-1911.github.io/2020/06/27/sauna/</loc>
     
     <lastmod>2020-06-27T02:38:40.737Z</lastmod>
@@ -33,13 +61,6 @@
     <loc>https://aling-1911.github.io/2020/06/17/tre/</loc>
     
     <lastmod>2020-06-17T10:11:47.487Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://aling-1911.github.io/2020/04/20/wp-1/</loc>
-    
-    <lastmod>2020-06-15T10:20:26.224Z</lastmod>
     
   </url>
   
@@ -96,13 +117,6 @@
     <loc>https://aling-1911.github.io/2020/06/11/shell-yu-fa/</loc>
     
     <lastmod>2020-06-13T06:43:56.008Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://aling-1911.github.io/2020/05/19/docker-commands/</loc>
-    
-    <lastmod>2020-06-13T06:42:56.211Z</lastmod>
     
   </url>
   
