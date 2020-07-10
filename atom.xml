@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aling-1911.github.io/"/>
-  <updated>2020-07-06T23:48:26.021Z</updated>
+  <updated>2020-07-10T01:54:10.044Z</updated>
   <id>https://aling-1911.github.io/</id>
   
   <author>
@@ -15,6 +15,92 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>weblogic 搭建</title>
+    <link href="https://aling-1911.github.io/2020/07/10/weblogic-1/"/>
+    <id>https://aling-1911.github.io/2020/07/10/weblogic-1/</id>
+    <published>2020-07-10T01:09:47.000Z</published>
+    <updated>2020-07-10T01:54:10.044Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  不会 jsp 的人来搭建 weblogic 了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先要有 java 环境，但我不会 java，就不展示蹩脚的 java 安装过程了……&lt;/p&gt;
+&lt;pre class=&quot;line-numbers
+        
+      
+    
+    </summary>
+    
+      <category term="环境搭建" scheme="https://aling-1911.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="weblogic" scheme="https://aling-1911.github.io/tags/weblogic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nmap</title>
+    <link href="https://aling-1911.github.io/2020/07/08/nmap/"/>
+    <id>https://aling-1911.github.io/2020/07/08/nmap/</id>
+    <published>2020-07-08T05:15:44.000Z</published>
+    <updated>2020-07-08T05:21:56.786Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  脚本位置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&quot;line-numbers language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;#
+        
+      
+    
+    </summary>
+    
+      <category term="安全工具" scheme="https://aling-1911.github.io/categories/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="nmap" scheme="https://aling-1911.github.io/tags/nmap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sqlmap</title>
+    <link href="https://aling-1911.github.io/2020/07/07/sqlmap/"/>
+    <id>https://aling-1911.github.io/2020/07/07/sqlmap/</id>
+    <published>2020-07-07T00:51:46.000Z</published>
+    <updated>2020-07-07T09:34:50.401Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;# 识别waf
+slqmap -u &quot;url&quot; --identify-waf&lt;span aria-hidden=&quot;true&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="安全工具" scheme="https://aling-1911.github.io/categories/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="sqlmap" scheme="https://aling-1911.github.io/tags/sqlmap/"/>
+    
+  </entry>
   
   <entry>
     <title>python wad</title>
@@ -504,33 +590,6 @@ Starting Nmap 7.80 (
     
     
       <category term="docker" scheme="https://aling-1911.github.io/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>wp-1</title>
-    <link href="https://aling-1911.github.io/2020/04/20/wp-1/"/>
-    <id>https://aling-1911.github.io/2020/04/20/wp-1/</id>
-    <published>2020-04-20T09:28:47.000Z</published>
-    <updated>2020-06-28T01:49:02.737Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;第一步确定dusk靶机ip&lt;/p&gt;
-&lt;p&gt;用nmap netdiscover之类的工具去扫，扫不到怎么办，看看这个吧  &lt;strong&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="渗透测试" scheme="https://aling-1911.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="vulnhub" scheme="https://aling-1911.github.io/tags/vulnhub/"/>
     
   </entry>
   

@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>weblogic 搭建</title>
+      <link href="/2020/07/10/weblogic-1/"/>
+      <url>/2020/07/10/weblogic-1/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>  不会 jsp 的人来搭建 weblogic 了</p></blockquote><p>先要有 java 环境，但我不会 java，就不展示蹩脚的 java 安装过程了……</p><pre class="line-numbers language-shell"><code class="language-shell">java -jar fmw_12.1.3.0.0_wls.jar<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>总之弹出这框框就对了</p><p><img src="image-20200710092008274.png" alt></p><p>真的不了解这个东西，全部点下一步…… 安装完成</p><p><img src="image-20200710092324963.png" alt></p><p>又有一个框框</p><p><img src="image-20200710092524077.png" alt></p><p>还是一路下一步…… 改配密码的配密码，也就没什么了</p><p><img src="image-20200710092806539.png" alt></p><p>这一步选个这个就可以了，其他的我也不会……</p><p><img src="image-20200710092924193.png" alt></p><p>最后启动看看……输个密码</p><p><img src="image-20200710093133538.png" alt></p><p>看到个 running，盲猜服务器因该是起来了，访问一下试试。</p><p><img src="image-20200710093303823.png" alt></p><p><img src="image-20200710093539373.png" alt></p><p><img src="images.jpg" alt></p><blockquote><p>  好了，试试 github 上找的漏洞探测脚本 hh</p></blockquote><p> <a href="https://github.com/rabbitmask/WeblogicScan" target="_blank" rel="noopener">weblogicScan</a></p><p><img src="image-20200710094810904.png" alt></p><p>i 了，i 了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 环境搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> weblogic </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nmap</title>
+      <link href="/2020/07/08/nmap/"/>
+      <url>/2020/07/08/nmap/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>  脚本位置</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell"># /usr/share/nmap/scripts/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安全工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nmap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sqlmap</title>
+      <link href="/2020/07/07/sqlmap/"/>
+      <url>/2020/07/07/sqlmap/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-shell"><code class="language-shell"># 识别wafslqmap -u "url" --identify-waf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安全工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sqlmap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python wad</title>
       <link href="/2020/07/07/python-wad/"/>
       <url>/2020/07/07/python-wad/</url>
