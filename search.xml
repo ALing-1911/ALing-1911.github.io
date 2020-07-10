@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>weblogic 后台 getshell</title>
+      <link href="/2020/07/10/weblogic-2/"/>
+      <url>/2020/07/10/weblogic-2/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>  war 包置作</p></blockquote><p><img src="image-20200710100538237.png" alt></p><blockquote><p>  部署 war 包</p></blockquote><p><img src="image-20200710100635380.png" alt></p><p><img src="image-20200710100701309.png" alt></p><p><img src="image-20200710100744745.png" alt></p><p><img src="image-20200710100814495.png" alt></p><p><img src="image-20200710100834488.png" alt></p><p><img src="image-20200710100948998.png" alt></p><p><img src="image-20200710101030644.png" alt></p><p><img src="image-20200710101105788.png" alt></p><p><img src="image-20200710101157369.png" alt></p><p>浏览器访问</p><p><img src="image-20200710101344034.png" alt></p><p>不会 java，也不会写马，有点尴尬，不过手法是学会了…… </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 漏洞学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> weblogic </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>weblogic 搭建</title>
       <link href="/2020/07/10/weblogic-1/"/>
       <url>/2020/07/10/weblogic-1/</url>

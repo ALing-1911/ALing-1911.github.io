@@ -1,3 +1,4 @@
+https://aling-1911.github.io/2020/07/10/weblogic-2/
 https://aling-1911.github.io/2020/07/10/weblogic-1/
 https://aling-1911.github.io/2020/07/08/nmap/
 https://aling-1911.github.io/2020/07/07/sqlmap/
