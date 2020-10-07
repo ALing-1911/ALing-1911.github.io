@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://aling-1911.github.io/2020/10/02/yu-huan-jing-da-jian/</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>  <url>
+    <loc>https://aling-1911.github.io/2020/07/02/redis-1/</loc>
+    <lastmod>2020-08-12</lastmod>
+  </url>  <url>
+    <loc>https://aling-1911.github.io/2020/08/09/weblogic-cve-2018-2628/</loc>
+    <lastmod>2020-08-12</lastmod>
+  </url>  <url>
+    <loc>https://aling-1911.github.io/2020/08/07/tomcat-cve-2020-1938/</loc>
+    <lastmod>2020-08-07</lastmod>
+  </url>  <url>
+    <loc>https://aling-1911.github.io/2020/07/08/nmap/</loc>
+    <lastmod>2020-07-30</lastmod>
+  </url>  <url>
     <loc>https://aling-1911.github.io/2020/07/11/weblogic-cve-2018-2894/</loc>
     <lastmod>2020-07-11</lastmod>
   </url>  <url>
@@ -10,19 +25,10 @@
     <loc>https://aling-1911.github.io/2020/06/27/sauna/</loc>
     <lastmod>2020-07-10</lastmod>
   </url>  <url>
-    <loc>https://aling-1911.github.io/2020/07/10/weblogic-2/</loc>
-    <lastmod>2020-07-10</lastmod>
-  </url>  <url>
     <loc>https://aling-1911.github.io/2020/07/10/weblogic-1/</loc>
     <lastmod>2020-07-10</lastmod>
   </url>  <url>
-    <loc>https://aling-1911.github.io/2020/07/08/nmap/</loc>
-    <lastmod>2020-07-08</lastmod>
-  </url>  <url>
     <loc>https://aling-1911.github.io/2020/07/07/python-wad/</loc>
-    <lastmod>2020-07-06</lastmod>
-  </url>  <url>
-    <loc>https://aling-1911.github.io/2020/07/02/redis-1/</loc>
     <lastmod>2020-07-06</lastmod>
   </url>  <url>
     <loc>https://aling-1911.github.io/2020/05/19/docker-commands/</loc>

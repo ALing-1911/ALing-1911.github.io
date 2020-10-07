@@ -1,5 +1,7 @@
+https://aling-1911.github.io/2020/10/02/yu-huan-jing-da-jian/
+https://aling-1911.github.io/2020/08/09/weblogic-cve-2018-2628/
+https://aling-1911.github.io/2020/08/07/tomcat-cve-2020-1938/
 https://aling-1911.github.io/2020/07/11/weblogic-cve-2018-2894/
-https://aling-1911.github.io/2020/07/10/weblogic-2/
 https://aling-1911.github.io/2020/07/10/weblogic-1/
 https://aling-1911.github.io/2020/07/08/nmap/
 https://aling-1911.github.io/2020/07/07/sqlmap/

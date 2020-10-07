@@ -306,7 +306,7 @@ redis-c">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -461,7 +461,7 @@ redis-c">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    159
+                    164
                 </div>
                 
 
@@ -490,6 +490,7 @@ zset
 list<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <pre class="line-numbers language-shell"><code class="language-shell">#命令
 redis-cli -h host -p port -a password  #远程连接
+nc -v ip port
  #command key_name
  del key
  dump key  #序列号key，并返回
@@ -500,10 +501,10 @@ config get requirepass  #查看登陆密码 默认是空
 config set requirepass aling  #设置密码为aling
 auth passwd  #验证身份
 flushall  #删除所有数据
-flushdb  #刷新所有数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+flushdb  #刷新所有数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>思路</p>
 <pre class="line-numbers language-shell"><code class="language-shell">#内网端口扫描
-nmap -v -n -Pn -p 6379 -sV --scriptredis-info ip_address
+nmap -v -n -Pn -p 6379 -sV --script redis-info ip_address
 #读取配置文件拿 获得明文密码
 #使用redis暴力破解工具爆破
 tool_name:node 
@@ -978,7 +979,7 @@ tool_name:node
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="python wad">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="python wad">
                         
                         <span class="card-title">python wad</span>
                     </div>
@@ -1027,7 +1028,7 @@ tool_name:node
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Sauna">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Sauna">
                         
                         <span class="card-title">Sauna</span>
                     </div>
@@ -1236,7 +1237,7 @@ tool_name:node
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">15.6k</span>
+            <span class="white-color">15.9k</span>
             
 
             <br>
